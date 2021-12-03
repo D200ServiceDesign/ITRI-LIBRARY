@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>remove-file</title>
+    <defs>
+        <path d="M12,2.00000001 C6.47000003,2.00000001 2.00000001,6.47000003 2.00000001,12 C2.00000001,17.5300001 6.47000003,22 12,22 C17.5300001,22 22,17.5300001 22,12 C22,6.47000003 17.5300001,2.00000001 12,2.00000001 L12,2.00000001 Z M17,15.5900001 L15.5900001,17 L12,13.4100001 L8.41000004,17 L7.00000003,15.5900001 L10.59,12 L7.00000003,8.41000004 L8.41000004,7.00000003 L12,10.59 L15.5900001,7.00000003 L17,8.41000004 L13.4100001,12 L17,15.5900001 L17,15.5900001 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="remove-file" transform="translate(0.000000, 0.000000)">
+            <polygon id="Base" fill-rule="nonzero" points="0 0 24.0000001 0 24.0000001 24.0000001 0 24.0000001"></polygon>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Icon" fill-rule="nonzero"></g>
+            <rect id="↳-🎨-Color" fill="#979797" mask="url(#mask-2)" x="5.00003807e-08" y="5.00003807e-08" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

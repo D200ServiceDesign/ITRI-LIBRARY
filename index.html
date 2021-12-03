@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>工研院圖書館 ITRI Library</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/basscss.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div class="modal" id="welcome">
+    <div class="modal-content">
+      <div class="close"></div>
+      <img src="./images/welcome.svg" alt="" />
+      <div class="title">歡迎來到工研院圖書館網站</div>
+      <div class="text">
+        新進同仁您好，歡迎您加入工研院這個大家庭！<br />
+        圖書館為您準備了專屬的新手專區，帶您快速了解，工作效能翻倍！
+      </div>
+      <button>進入新手專區</button>
+    </div>
+  </div>
+
+  <div id="sideMenu" class="side-menu">
+    <div class="menu-container">
+      <div class="menu-header">
+        <div class="collapse-btn" id="collapseBtn"></div>
+      </div>
+      <div class="details-container">
+        <details>
+          <summary>
+            <div class="title">
+              資源 Resource
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">查詢</div>
+            <ul>
+              <li><a href="#">館藏查詢</a></li>
+              <li><a href="#">研發探索系統</a></li>
+              <li><a href="#">全院期刊查詢</a></li>
+            </ul>
+            <div class="headline">電子資源</div>
+            <ul>
+              <li><a href="#">電子資料庫與使用工具</a></li>
+              <li><a href="#">電子期刊查詢</a></li>
+              <li><a href="#">全院可用電子圖書</a></li>
+              <li><a href="#">HyRead雲端圖書館</a></li>
+            </ul>
+            <div class="headline">精選資訊</div>
+            <ul>
+              <li><a href="#">進館新書</a></li>
+              <li><a href="#">主題書展</a></li>
+              <li><a href="#">產業資訊精選</a></li>
+              <li><a href="#">GRB政府計劃資訊分析</a></li>
+              <li><a href="#">2030策略藍圖PEST專題</a></li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <div class="title">
+              支援 Support
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">資源推薦</div>
+            <ul>
+              <li><a href="#">推薦/票選書刊</a></li>
+              <li><a href="#">試用/推薦資料庫</a></li>
+              <li><a href="#">團購資料</a></li>
+            </ul>
+            <div class="headline">使用者服務</div>
+            <ul>
+              <li><a href="#">我是新手</a></li>
+              <li><a href="#" class="na">我是研發人員</a></li>
+            </ul>
+            <div class="headline">研發輔助工具</div>
+            <ul>
+              <li><a href="#">館員精選資源</a></li>
+              <li><a href="#">研發助理/OA</a></li>
+              <li><a href="#">自訂主題追蹤</a></li>
+              <li><a href="#">ITRI詞庫</a></li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <div class="title">
+              服務 Service
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">我想要…</div>
+            <ul>
+              <li><a href="#">申請標準全文/館際文獻影印/借書</a></li>
+              <li><a href="#">查詢個人借閱/續借</a></li>
+              <li><a href="#">查詢申請紀錄</a></li>
+              <li><a href="#">訂閱電子報</a></li>
+              <li><a href="#">問問題</a></li>
+            </ul>
+            <div class="headline">課程與活動</div>
+            <ul>
+              <li><a href="#">課程講座</a></li>
+              <li><a href="#">科技展覽資訊</a></li>
+              <li>
+                <a href="#" class="na">工研人的閱讀筆記</a>
+              </li>
+            </ul>
+            <div class="headline">關於圖書館</div>
+            <ul>
+              <li><a href="#">訊息公告</a></li>
+              <li><a href="#">開放時間與介紹</a></li>
+              <li><a href="#">交換借書證與其他規則</a></li>
+              <li><a href="#">服務特色</a></li>
+            </ul>
+          </div>
+        </details>
+        <a href="#">
+          <div class="side-menu-link">研發探索系統</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <div id="menuBtn" class="menu lg-hide"></div>
+      <div class="logo"></div>
+      <div class="nav-bar xs-hide sm-hide md-hide">
+        <div class="row">
+          登入者：
+          <div class="user">張文怡</div>
+          <a href="https://itriweb.itri.org.tw/">ITRIWeb</a>
+          <form action="#">
+            <input type="text" placeholder="站內搜尋" name="search" />
+            <button type="submit" class="search-btn"></button>
+          </form>
+        </div>
+        <nav>
+          <div class="dropdown">
+            <span>資源 Resource</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">查詢</div>
+                <ul>
+                  <li><a href="#">館藏查詢</a></li>
+                  <li><a href="#">研發探索系統</a></li>
+                  <li><a href="#">全院期刊查詢</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">電子資源</div>
+                <ul>
+                  <li><a href="#">電子資料庫與使用工具</a></li>
+                  <li><a href="#">電子期刊查詢</a></li>
+                  <li><a href="#">全院可用電子圖書</a></li>
+                  <li><a href="#">HyRead雲端圖書館</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">精選資訊</div>
+                <ul>
+                  <li><a href="#">進館新書</a></li>
+                  <li><a href="#">主題書展</a></li>
+                  <li><a href="#">產業資訊精選</a></li>
+                  <li><a href="#">GRB政府計劃資訊分析</a></li>
+                  <li><a href="#">2030策略藍圖PEST專題</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <span>支援 Support</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">資源推薦</div>
+                <ul>
+                  <li><a href="#">推薦/票選書刊</a></li>
+                  <li><a href="#">試用/推薦資料庫</a></li>
+                  <li><a href="#">團購資料</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">使用者服務</div>
+                <ul>
+                  <li><a href="#">我是新手</a></li>
+                  <li><a href="#" class="na">我是研發人員</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">研發輔助工具</div>
+                <ul>
+                  <li><a href="#">館員精選資源</a></li>
+                  <li><a href="#">研發助理</a></li>
+                  <li><a href="#">自訂主題追蹤</a></li>
+                  <li><a href="#">ITRI詞庫</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <span>服務 Service</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">我想要…</div>
+                <ul>
+                  <li><a href="#">申請標準全文/館際文獻<br>影印/借書</a></li>
+                  <li><a href="#">查詢個人借閱/續借</a></li>
+                  <li><a href="#">查詢申請紀錄</a></li>
+                  <li><a href="#">訂閱電子報</a></li>
+                  <li><a href="#">問問題</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">課程與活動</div>
+                <ul>
+                  <li><a href="#">課程講座</a></li>
+                  <li><a href="#">科技展覽資訊</a></li>
+                  <li>
+                    <a href="#" class="na">工研人的閱讀筆記</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">關於圖書館</div>
+                <ul>
+                  <li><a href="#">訊息公告</a></li>
+                  <li><a href="#">開放時間與介紹</a></li>
+                  <li><a href="#">交換借書證與其他規則</a></li>
+                  <li><a href="#">服務特色</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="#">研發探索系統</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="hero-search">
+    <div class="hero-container">
+      <div class="title">資源探索</div>
+      <hr />
+      <form action="#">
+        <input type="text" placeholder="請輸入關鍵字" name="search" />
+        <button type="submit" class="hero-search-btn">查詢</button>
+      </form>
+      <div class="text">
+        查詢本館圖書期刊、文獻、產業資訊、院內技資專利等資源
+      </div>
+    </div>
+  </section>
+  <section class="news">
+    <div class="news-container">
+      <div class="sm-col sm-col-12 lg-col-8">
+        <div class="title">訊息公告</div>
+        <table>
+          <tr>
+            <td class="news-title">
+              <a class="pin" href="#">研發探索系統新增「2030技術策略與藍圖」八個主題PEST電子報訂閱服務，歡迎多加利用！</a>
+            </td>
+            <td class="news-date">2021/04/07</td>
+          </tr>
+          <tr>
+            <td class="news-title">
+              <a class="pin" href="#">【歡迎報名】4/22
+                循迴永續—尋回海洋，尋回地球(線上講座)，可抵環境教育課程1.5小時</a>
+            </td>
+            <td class="news-date">2021/04/07</td>
+          </tr>
+          <tr>
+            <td class="news-title">
+              <a
+                href="#">清大圖書館考試期間暫停持互換借書證之讀者入館通知清大圖書館考試期間暫停持互換借書證之讀者入館通知清大圖書館考試期間暫停持互換借書證之讀者入館通知清大圖書館考試期間暫停持互換借書證之讀者入館通知</a>
+            </td>
+            <td class="news-date">2021/04/07</td>
+          </tr>
+          <tr>
+            <td class="news-title">
+              <a href="#">【歡迎報名】4/29 Goldfire
+                技術研發與專利分析(線上課程)【歡迎報名】4/29 Goldfire
+                技術研發與專利分析(線上課程)</a>
+            </td>
+            <td class="news-date">2021/04/07</td>
+          </tr>
+          <tr>
+            <td class="news-title">
+              <a href="#">【共好生活 永續環境】主題書【共好生活
+                永續環境】主題書【共好生活 永續環境】主題書【共好生活
+                永續環境】主題書</a>
+            </td>
+            <td class="news-date">2021/04/07</td>
+          </tr>
+        </table>
+        <div class="more" onclick="location.href='#';">更多公告</div>
+      </div>
+      <div class="sm-col sm-col-12 lg-col-4 links">
+        <div class="title">常用連結</div>
+        <div class="link-box">
+          <div class="link-1"><a href="#">館藏查詢</a></div>
+          <div class="link-2"><a href="#">借閱/續借</a></div>
+          <div class="link-3"><a href="#">票選新書</a></div>
+          <div class="link-4"><a href="#">專利資料庫</a></div>
+          <div class="link-5"><a href="#">商情資料庫</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="event">
+    <div class="event-container">
+      <div class="title">主題書展與課程報名</div>
+      <div class="tab">
+        <a class="active" href="#tab-1">主題書展</a>
+        <a href="#tab-2">課程報名</a>
+      </div>
+      <div class="tab-content">
+        <div id="tab-1" class="tab-pane active">
+          <div class="fair-title">四月書展 ｜【共好生活 永續環境】</div>
+          <div class="fair-container">
+            <div class="fair-cover">
+              <img src="./images/fair-image.png" alt="" />
+            </div>
+            <div class="book xs-hide sm-hide md-hide">
+              <div class="book-cover">
+                <img src="./images/book-image.png" alt="" />
+              </div>
+              <div class="book-name">
+                不塑過日子 -家裡零垃圾的極簡生活練習
+              </div>
+            </div>
+            <div class="book xs-hide sm-hide md-hide">
+              <div class="book-cover">
+                <img src="./images/book-image2.png" alt="" />
+              </div>
+              <div class="book-name">
+                不塑過日子 -家裡零垃圾的極簡生活練習
+              </div>
+            </div>
+            <div class="book xs-hide sm-hide md-hide">
+              <div class="book-cover">
+                <img src="./images/book-image3.png" alt="" />
+              </div>
+              <div class="book-name">
+                不塑過日子 -家裡零垃圾的極簡生活練習
+              </div>
+            </div>
+          </div>
+          <div class="more" onclick="location.href='#';">更多書展</div>
+        </div>
+
+        <div id="tab-2" class="tab-pane">
+          <div class="swiper-container swiperOne">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="course-box">
+                  <div class="title">
+                    1循迴永續—尋回海洋，尋回地球(線上直播，可抵環境教育時數)
+                  </div>
+                  <div class="date-time">
+                    <span class="date">2021/04/22</span>
+                    <span class="time">13:30~15:00</span>
+                  </div>
+                  <button>詳細內容</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course-box">
+                  <div class="title">
+                    2循迴永續—尋回海洋，尋回地球(線上直播，可抵環境教育時數)
+                  </div>
+                  <div class="date-time">
+                    <span class="date">2021/04/22</span>
+                    <span class="time">13:30~15:00</span>
+                  </div>
+                  <button>詳細內容</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course-box">
+                  <div class="title">
+                    3循迴永續—尋回海洋，尋回地球(線上直播，可抵環境教育時數)
+                  </div>
+                  <div class="date-time">
+                    <span class="date">2021/04/22</span>
+                    <span class="time">13:30~15:00</span>
+                  </div>
+                  <button>詳細內容</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course-box">
+                  <div class="title">
+                    4循迴永續—尋回海洋，尋回地球(線上直播，可抵環境教育時數)
+                  </div>
+                  <div class="date-time">
+                    <span class="date">2021/04/22</span>
+                    <span class="time">13:30~15:00</span>
+                  </div>
+                  <button>詳細內容</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course-box">
+                  <div class="title">
+                    5循迴永續—尋回海洋，尋回地球(線上直播，可抵環境教育時數)
+                  </div>
+                  <div class="date-time">
+                    <span class="date">2021/04/22</span>
+                    <span class="time">13:30~15:00</span>
+                  </div>
+                  <button>詳細內容</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course-box">
+                  <div class="title">
+                    6循迴永續—尋回海洋，尋回地球(線上直播，可抵環境教育時數)
+                  </div>
+                  <div class="date-time">
+                    <span class="date">2021/04/22</span>
+                    <span class="time">13:30~15:00</span>
+                  </div>
+                  <button>詳細內容</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course-box">
+                  <div class="title">
+                    7循迴永續—尋回海洋，尋回地球(線上直播，可抵環境教育時數)
+                  </div>
+                  <div class="date-time">
+                    <span class="date">2021/04/22</span>
+                    <span class="time">13:30~15:00</span>
+                  </div>
+                  <button>詳細內容</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course-box">
+                  <div class="title">
+                    8循迴永續—尋回海洋，尋回地球(線上直播，可抵環境教育時數)
+                  </div>
+                  <div class="date-time">
+                    <span class="date">2021/04/22</span>
+                    <span class="time">13:30~15:00</span>
+                  </div>
+                  <button>詳細內容</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course-box">
+                  <div class="title">
+                    9循迴永續—尋回海洋，尋回地球(線上直播，可抵環境教育時數)
+                  </div>
+                  <div class="date-time">
+                    <span class="date">2021/04/22</span>
+                    <span class="time">13:30~15:00</span>
+                  </div>
+                  <button>詳細內容</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-custom-prev"></div>
+          <div class="swiper-button-custom-next"></div>
+          <div class="more" onclick="location.href='#';">更多課程</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="new">
+    <div class="new-container">
+      <div class="title">新書推薦</div>
+      <div class="tab">
+        <a class="active" href="#tab-3">新書展示</a>
+        <a href="#tab-4">預約排行</a>
+      </div>
+      <div class="tab-content">
+        <div id="tab-3" class="tab-pane active">
+          <div class="swiper-container swiperTwo">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習 不塑過日子
+                    -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-custom-prev-2"></div>
+          <div class="swiper-button-custom-next-2"></div>
+          <div class="more" onclick="location.href='#';">更多新書</div>
+        </div>
+
+        <div id="tab-4" class="tab-pane">
+          <div class="swiper-container swiperTwo">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image2.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image2.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image2.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image2.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image2.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-custom-prev-2"></div>
+          <div class="swiper-button-custom-next-2"></div>
+          <div class="more" onclick="location.href='#';">更多新書</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sitemap xs-hide sm-hide md-hide">
+    <div class="sitemap-container">
+      <div class="sm-col sm-col-4">
+        <div class="title px1">資源 Resource</div>
+        <div class="group">
+          <div class="col col-6 px1">
+            <div class="headline">查詢</div>
+            <ul>
+              <li><a href="#">館藏查詢</a></li>
+              <li><a href="#">研發探索系統</a></li>
+              <li><a href="#">全院期刊查詢</a></li>
+            </ul>
+            <div class="headline">電子資源</div>
+            <ul>
+              <li><a href="#">電子資料庫與使用工具</a></li>
+              <li><a href="#">電子期刊查詢</a></li>
+              <li><a href="#">全院可用電子圖書</a></li>
+              <li><a href="#">HyRead雲端圖書館</a></li>
+            </ul>
+          </div>
+          <div class="col col-6 px1">
+            <div class="headline">精選資訊</div>
+            <ul>
+              <li><a href="#">進館新書</a></li>
+              <li><a href="#">主題書展</a></li>
+              <li><a href="#">產業資訊精選</a></li>
+              <li><a href="#">GRB政府計劃資訊分析</a></li>
+              <li><a href="#">2030策略藍圖PEST專題</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="sm-col sm-col-4">
+        <div class="title px1">支援 Support</div>
+        <div class="group">
+          <div class="col col-6 px1">
+            <div class="headline">資源推薦</div>
+            <ul>
+              <li><a href="#">推薦/票選書刊</a></li>
+              <li><a href="#">試用/推薦資料庫</a></li>
+              <li><a href="#">團購資料</a></li>
+            </ul>
+            <div class="headline">使用者服務</div>
+            <ul>
+              <li><a href="#">我是新手</a></li>
+              <li><a href="#" class="na">我是研發人員</a></li>
+            </ul>
+          </div>
+          <div class="col col-6 px1">
+            <div class="headline">研發輔助工具</div>
+            <ul>
+              <li><a href="#">館員精選資源</a></li>
+              <li><a href="#">研發助理/OA</a></li>
+              <li><a href="#">自訂主題追蹤</a></li>
+              <li><a href="#">ITRI詞庫</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="sm-col sm-col-4">
+        <div class="title px1">服務 Service</div>
+        <div class="group">
+          <div class="col col-6 px1">
+            <div class="headline">關於圖書館</div>
+            <ul>
+              <li><a href="#">訊息公告</a></li>
+              <li><a href="#">開放時間與介紹</a></li>
+              <li><a href="#">交換借書證與其他規則</a></li>
+              <li><a href="#">服務特色</a></li>
+            </ul>
+            <div class="headline">課程與活動</div>
+            <ul>
+              <li><a href="#">課程講座</a></li>
+              <li><a href="#">科技展覽資訊</a></li>
+              <li><a href="#" class="na">工研人的閱讀筆記</a></li>
+            </ul>
+          </div>
+          <div class="col col-6 px1">
+            <div class="headline">我想要…</div>
+            <ul>
+              <li><a href="#">申請標準全文/館際文獻影印/借書</a></li>
+              <li><a href="#">查詢個人借閱/續借</a></li>
+              <li><a href="#">查詢申請紀錄</a></li>
+              <li><a href="#">訂閱電子報</a></li>
+              <li><a href="#">問問題</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="info xs-hide">
+      版權所有© 2021 工業技術研究院 | 限院內同仁公務使用 禁止對外公開<br />
+      圖書館諮詢專線：18174；ersolib@itri.org.tw　|　網站設計製作：資訊處　|　<a href="#">FAQ</a>
+    </div>
+    <div class="info lg-hide sm-hide md-hide">
+      版權所有© 2021 工業技術研究院<br />
+      限院內同仁公務使用 禁止對外公開<br /><br />
+      圖書館諮詢專線：18174<br />
+      ersolib@itri.org.tw；<br />
+      網站設計製作：資訊處<br />
+      <a href="#">FAQ</a>
+    </div>
+  </footer>
+  <script src="./js/sidemenu.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script>
+    const numberOfCourseSlides = document.querySelectorAll('.swiperOne .swiper-slide').length;
+    var loopInit;
+    if (numberOfCourseSlides > 3) {
+      loopInit = true;
+    } else {
+      loopInit = false;
+    }
+    var swiper = new Swiper(".swiperOne", {
+      resizeObserver: true,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      watchOverflow: true,
+      autoplay: {
+        delay: 6000,
+      },
+      pagination: {
+        el: ".swiper-paginations",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-custom-next",
+        prevEl: ".swiper-button-custom-prev",
+      },
+      breakpoints: {
+        1024: {
+          resizeObserver: true,
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          loop: loopInit,
+          loopFillGroupWithBlank: true,
+          watchOverflow: true,
+          autoplay: {
+            delay: 6000,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-custom-next",
+            prevEl: ".swiper-button-custom-prev",
+          },
+        },
+      },
+    });
+
+    var swiper2 = new Swiper(".swiperTwo", {
+      resizeObserver: true,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+        delay: 6000,
+      },
+      pagination: {
+        el: ".swiper-paginations",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-custom-next",
+        prevEl: ".swiper-button-custom-prev",
+      },
+      breakpoints: {
+        640: {
+          resizeObserver: true,
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: false,
+          autoplay: {
+            delay: 6000,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-custom-next-2",
+            prevEl: ".swiper-button-custom-prev-2",
+          },
+        },
+        1024: {
+          resizeObserver: true,
+          slidesPerView: 5,
+          slidesPerGroup: 5,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          autoplay: {
+            delay: 6000,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-custom-next-2",
+            prevEl: ".swiper-button-custom-prev-2",
+          },
+        },
+      },
+    });
+  </script>
+
+  <script>
+    window.addEventListener("load", function () {
+      var theTabs = document.querySelectorAll(".tab > a");
+
+      function theTabClicks(tabClickEvent) {
+        var clickedTab = tabClickEvent.currentTarget;
+        var tabParent =
+          tabClickEvent.currentTarget.parentNode.parentNode.parentNode;
+        var theTabs = tabParent.querySelectorAll(".tab > a");
+        for (var i = 0; i < theTabs.length; i++) {
+          theTabs[i].classList.remove("active");
+        }
+        clickedTab.classList.add("active");
+        tabClickEvent.preventDefault();
+        var contentPanes = tabParent.querySelectorAll(".tab-pane");
+        for (i = 0; i < contentPanes.length; i++) {
+          contentPanes[i].classList.remove("active");
+        }
+        var anchorReference = tabClickEvent.target;
+        var activePaneId = anchorReference.getAttribute("href");
+        var activePane = tabParent.querySelector(activePaneId);
+        activePane.classList.add("active");
+      }
+      for (i = 0; i < theTabs.length; i++) {
+        theTabs[i].addEventListener("click", theTabClicks);
+      }
+    });
+  </script>
+
+  <script>
+    (function () {
+      var visited = localStorage.getItem("visited");
+      console.log("first time");
+      if (!visited) {
+        document.getElementById("welcome").style.display = "block";
+        localStorage.setItem("visited", true);
+      }
+    })();
+
+    var modal = document.getElementsByClassName("modal")[0];
+    var close = document.getElementsByClassName("close")[0];
+    close.onclick = function () {
+      modal.style.display = "none";
+    };
+    var closeModal = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+    window.addEventListener("click", closeModal);
+    window.addEventListener("touchend", closeModal);
+  </script>
+</body>
+
+</html>

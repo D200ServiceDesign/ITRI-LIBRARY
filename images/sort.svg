@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="72px" viewBox="0 0 24 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-158.000000, -40.000000)">
+            <g id="Group" transform="translate(158.000000, 40.000000)">
+                <g id="asc" transform="translate(7.000000, 28.000000)" fill-rule="nonzero">
+                    <polygon id="Path" fill="#575757" points="10 6.4 0 6.4 5 0"></polygon>
+                    <polygon id="Path" fill="#D8D8D8" points="0 9.6 10 9.6 5 16"></polygon>
+                </g>
+                <g id="des" transform="translate(7.000000, 52.000000)" fill-rule="nonzero">
+                    <polygon id="Path" fill="#D8D8D8" points="10 6.4 0 6.4 5 0"></polygon>
+                    <polygon id="Path" fill="#575757" points="0 9.6 10 9.6 5 16"></polygon>
+                </g>
+                <g id="default" transform="translate(7.000000, 4.000000)" fill="#D8D8D8" fill-rule="nonzero">
+                    <polygon id="Path" points="10 6.4 0 6.4 5 0"></polygon>
+                    <polygon id="Path" points="0 9.6 10 9.6 5 16"></polygon>
+                </g>
+                <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                <rect id="Rectangle-Copy" x="0" y="24" width="24" height="24"></rect>
+                <rect id="Rectangle-Copy-2" x="0" y="48" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

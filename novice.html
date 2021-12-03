@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我是新手 | 工研院圖書館 ITRI Library</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/basscss.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div id="sideMenu" class="side-menu">
+    <div class="menu-container">
+      <div class="menu-header">
+        <div class="collapse-btn" id="collapseBtn"></div>
+      </div>
+      <div class="details-container">
+        <details>
+          <summary>
+            <div class="title">
+              資源 Resource
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">查詢</div>
+            <ul>
+              <li><a href="#">館藏查詢</a></li>
+              <li><a href="#">研發探索系統</a></li>
+              <li><a href="#">全院期刊查詢</a></li>
+            </ul>
+            <div class="headline">電子資源</div>
+            <ul>
+              <li><a href="#">電子資料庫與使用工具</a></li>
+              <li><a href="#">電子期刊查詢</a></li>
+              <li><a href="#">全院可用電子圖書</a></li>
+              <li><a href="#">HyRead雲端圖書館</a></li>
+            </ul>
+            <div class="headline">精選資訊</div>
+            <ul>
+              <li><a href="#">進館新書</a></li>
+              <li><a href="#">主題書展</a></li>
+              <li><a href="#">產業資訊精選</a></li>
+              <li><a href="#">GRB政府計劃資訊分析</a></li>
+              <li><a href="#">2030策略藍圖PEST專題</a></li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <div class="title">
+              支援 Support
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">資源推薦</div>
+            <ul>
+              <li><a href="#">推薦/票選書刊</a></li>
+              <li><a href="#">試用/推薦資料庫</a></li>
+              <li><a href="#">團購資料</a></li>
+            </ul>
+            <div class="headline">使用者服務</div>
+            <ul>
+              <li><a href="#">我是新手</a></li>
+              <li><a href="#" class="na">我是研發人員</a></li>
+            </ul>
+            <div class="headline">研發輔助工具</div>
+            <ul>
+              <li><a href="#">館員精選資源</a></li>
+              <li><a href="#">研發助理/OA</a></li>
+              <li><a href="#">自訂主題追蹤</a></li>
+              <li><a href="#">ITRI詞庫</a></li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <div class="title">
+              服務 Service
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">我想要…</div>
+            <ul>
+              <li><a href="#">申請標準全文/館際文獻影印/借書</a></li>
+              <li><a href="#">查詢個人借閱/續借</a></li>
+              <li><a href="#">查詢申請紀錄</a></li>
+              <li><a href="#">訂閱電子報</a></li>
+              <li><a href="#">問問題</a></li>
+            </ul>
+            <div class="headline">課程與活動</div>
+            <ul>
+              <li><a href="#">課程講座</a></li>
+              <li><a href="#">科技展覽資訊</a></li>
+              <li>
+                <a href="#" class="na">工研人的閱讀筆記</a>
+              </li>
+            </ul>
+            <div class="headline">關於圖書館</div>
+            <ul>
+              <li><a href="#">訊息公告</a></li>
+              <li><a href="#">開放時間與介紹</a></li>
+              <li><a href="#">交換借書證與其他規則</a></li>
+              <li><a href="#">服務特色</a></li>
+            </ul>
+          </div>
+        </details>
+        <a href="#">
+          <div class="side-menu-link">研發探索系統</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <div id="menuBtn" class="menu lg-hide"></div>
+      <div class="logo"></div>
+      <div class="nav-bar xs-hide sm-hide md-hide">
+        <div class="row">
+          登入者：
+          <div class="user">張文怡</div>
+          <a href="https://itriweb.itri.org.tw/">ITRIWeb</a>
+          <form action="#">
+            <input type="text" placeholder="站內搜尋" name="search" />
+            <button type="submit" class="search-btn"></button>
+          </form>
+        </div>
+        <nav>
+          <div class="dropdown">
+            <span>資源 Resource</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">查詢</div>
+                <ul>
+                  <li><a href="#">館藏查詢</a></li>
+                  <li><a href="#">研發探索系統</a></li>
+                  <li><a href="#">全院期刊查詢</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">電子資源</div>
+                <ul>
+                  <li><a href="#">電子資料庫與使用工具</a></li>
+                  <li><a href="#">電子期刊查詢</a></li>
+                  <li><a href="#">全院可用電子圖書</a></li>
+                  <li><a href="#">HyRead雲端圖書館</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">精選資訊</div>
+                <ul>
+                  <li><a href="#">進館新書</a></li>
+                  <li><a href="#">主題書展</a></li>
+                  <li><a href="#">產業資訊精選</a></li>
+                  <li><a href="#">GRB政府計劃資訊分析</a></li>
+                  <li><a href="#">2030策略藍圖PEST專題</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <span>支援 Support</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">資源推薦</div>
+                <ul>
+                  <li><a href="#">推薦/票選書刊</a></li>
+                  <li><a href="#">試用/推薦資料庫</a></li>
+                  <li><a href="#">團購資料</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">使用者服務</div>
+                <ul>
+                  <li><a href="#">我是新手</a></li>
+                  <li><a href="#" class="na">我是研發人員</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">研發輔助工具</div>
+                <ul>
+                  <li><a href="#">館員精選資源</a></li>
+                  <li><a href="#">研發助理</a></li>
+                  <li><a href="#">自訂主題追蹤</a></li>
+                  <li><a href="#">ITRI詞庫</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <span>服務 Service</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">我想要…</div>
+                <ul>
+                  <li><a href="#">申請標準全文/館際文獻<br>影印/借書</a></li>
+                  <li><a href="#">查詢個人借閱/續借</a></li>
+                  <li><a href="#">查詢申請紀錄</a></li>
+                  <li><a href="#">訂閱電子報</a></li>
+                  <li><a href="#">問問題</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">課程與活動</div>
+                <ul>
+                  <li><a href="#">課程講座</a></li>
+                  <li><a href="#">科技展覽資訊</a></li>
+                  <li>
+                    <a href="#" class="na">工研人的閱讀筆記</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">關於圖書館</div>
+                <ul>
+                  <li><a href="#">訊息公告</a></li>
+                  <li><a href="#">開放時間與介紹</a></li>
+                  <li><a href="#">交換借書證與其他規則</a></li>
+                  <li><a href="#">服務特色</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="#">研發探索系統</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-container">
+      <ul class="breadcrumb">
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">支援</a></li>
+        <li><a href="#">使用者服務</a></li>
+        <li>我是新手</li>
+      </ul>
+      <div class="title">我是新手</div>
+      <div class="text">
+        歡迎加入工研院大家庭，推薦您好用的圖書資訊服務大補帖，<br />
+        讓您蹲穩馬步，工作效能翻倍！
+      </div>
+      <div class="arrow-down"></div>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="feature-container">
+      <div class="title mb4">書刊借還好便利，最新書單一次掌握</div>
+      <div class="sm-col sm-col-4">
+        <div class="feature-card">
+          <div class="feature-icon feature-1"></div>
+          <div class="title"><a href="#">館藏查詢系統</a></div>
+          <div class="text">
+            館藏查詢系統可查詢全院書刊及個人借閱紀錄。可線上跨館借書，並可送到指定圖書館或個人辦公室。
+          </div>
+        </div>
+      </div>
+      <div class="sm-col sm-col-4">
+        <div class="feature-card">
+          <div class="feature-icon feature-2"></div>
+          <div class="title"><a href="#">借閱規則</a></div>
+          <div class="text">
+            <b>展示新書、當期期刊：</b>1冊/隔夜借還16:00-9:00。<br />
+            <b>過期期刊：</b>3冊/3天。<br />
+            <b>一般圖書：</b>30冊/31天，續借上限180天，若有人預約，借期14天。
+          </div>
+        </div>
+      </div>
+      <div class="sm-col sm-col-4">
+        <div class="feature-card">
+          <div class="feature-icon feature-3"></div>
+          <div class="title"><a href="#">各院區圖書館資訊</a></div>
+          <div class="text">
+            <b>綜研館</b>(51館B1)08:00 - 18:00<br />
+            <b>光復館</b>(3-4館) 8:00 - 18:00 <br />
+            <b>機電館</b>(11館B1) 9:00 - 18:00 <br />
+            <b>六甲館</b>(北研棟1F) 8:00 - 17:00
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature bg-yellow">
+    <div class="feature-container">
+      <div class="title mb3">電子圖書、電子期刊、電子雜誌隨時享閱趣</div>
+      <div class="subtitle mb3">
+        萬種電子期刊、電子圖書，提供全文下載<br />
+        Hyread行動閱讀，熱門中文電子雜誌/書，閱讀零時差
+      </div>
+      <div class="feature-row">
+        <div class="feature-card">
+          <div class="feature-icon feature-4"></div>
+          <div class="title"><a href="#">電子期刊</a></div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon feature-5"></div>
+          <div class="title"><a href="#">電子圖書</a></div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon feature-6"></div>
+          <div class="title"><a href="#">電子雜誌</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="feature-container">
+      <div class="title mb4">達人必用特殊資源，讓您找資料專業又快速</div>
+      <div class="sm-col sm-col-3">
+        <div class="feature-card">
+          <div class="feature-icon feature-1"></div>
+          <div class="title"><a href="#">研發資源探索系統</a></div>
+          <div class="text">
+            特推研發資源探索系統，一站找足論文、產業資訊及院內技術資料
+          </div>
+        </div>
+      </div>
+      <div class="sm-col sm-col-3">
+        <div class="feature-card">
+          <div class="feature-icon feature-7"></div>
+          <div class="title"><a href="#">專利及專利分析</a></div>
+          <div class="text">
+            <a href="#">Derwent Innovation</a><br />
+            <a href="#">IPTECH</a><br />
+            <a href="#">更多</a>
+          </div>
+        </div>
+      </div>
+      <div class="sm-col sm-col-3">
+        <div class="feature-card">
+          <div class="feature-icon feature-8"></div>
+          <div class="title"><a href="#">科技期刊/會議論文</a></div>
+          <div class="text">
+            化學/生醫 - <a href="#">SciFinder</a><br />
+            光電/物理類 - <a href="#">SPIE</a><br />
+            電子/電機/物理類 - <a href="#">IEEE Xplore</a><br />
+            綜合類 - <a href="#">ScienceDirect</a><br />
+            <a href="#">更多</a>
+          </div>
+        </div>
+      </div>
+      <div class="sm-col sm-col-3">
+        <div class="feature-card">
+          <div class="feature-icon feature-9"></div>
+          <div class="title"><a href="#">商情產業資訊</a></div>
+          <div class="text">
+            <a href="#">Frost &Sullivan </a><br /><a href="#">Markets&Markets </a><br /><a href="#">IDTechEx
+            </a><br /><a href="#">DIGITIMES </a><br /><a href="#">更多</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature bg-grey">
+    <div class="feature-container">
+      <div class="title mb3">電子圖書、電子期刊、電子雜誌隨時享閱趣</div>
+      <div class="subtitle mb3">
+        萬種電子期刊、電子圖書，提供全文下載<br />
+        Hyread行動閱讀，熱門中文電子雜誌/書，閱讀零時差
+      </div>
+      <div class="feature-row">
+        <div class="feature-card">
+          <div class="feature-icon feature-10"></div>
+          <div class="title"><a href="#">文獻複印/館際借書</a></div>
+          <div class="text">
+            圖書館沒有的資料，可以申請後借用清大、陽明交大等校交換借書證
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon feature-11"></div>
+          <div class="title"><a href="#">課程講座</a></div>
+          <div class="text">報名講座/課程，跨領域學習，提升自我</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon feature-12"></div>
+          <div class="title"><a href="#">訂閱新書電子報</a></div>
+          <div class="text">訂閱新書電子報，掌握每日進館新書，主題書</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="feature-container">
+      <div class="title mb3">常見問答</div>
+      <details>
+        <summary>
+          <div class="title">
+            Q1. 如何查詢我的借閱紀錄?<span class="arrow"></span>
+          </div>
+        </summary>
+        <div class="answer-box">
+          駐外單位(本院無實體圖書館的地區)同仁在館藏查詢系統中，欲借的書”取書地點”的選項有兩種，<br /><br />
+          (1)一般圖書，取書地點請選「個人辦公室」<br /><br />
+          (2)福委會圖書，取書地點請選「駐外地區傳遞服務」，選妥後，圖書館將傳遞至系統預設的個人辦公地點(資料取自工研人系統)，或您可視需要自行修改傳遞位置。<br /><br />
+          原則上，「借書直送辦公室服務」，僅限一般圖書，針對駐外地區同仁特別增加提供「福委會圖書可借書直送辦公室」，但一次最多借閱3本。還書時請用院內掛號傳遞，若非院內傳遞點，則須自行用院外掛號方式郵遞。
+        </div>
+      </details>
+      <details>
+        <summary>
+          <div class="title">
+            Q2. 駐外單位如何借還書?<span class="arrow"></span>
+          </div>
+        </summary>
+        <div class="answer-box">
+          駐外單位(本院無實體圖書館的地區)同仁在館藏查詢系統中，欲借的書”取書地點”的選項有兩種，<br /><br />
+          (1)一般圖書，取書地點請選「個人辦公室」<br /><br />
+          (2)福委會圖書，取書地點請選「駐外地區傳遞服務」，選妥後，圖書館將傳遞至系統預設的個人辦公地點(資料取自工研人系統)，或您可視需要自行修改傳遞位置。<br /><br />
+          原則上，「借書直送辦公室服務」，僅限一般圖書，針對駐外地區同仁特別增加提供「福委會圖書可借書直送辦公室」，但一次最多借閱3本。還書時請用院內掛號傳遞，若非院內傳遞點，則須自行用院外掛號方式郵遞。
+        </div>
+      </details>
+      <details>
+        <summary>
+          <div class="title">
+            Q3. 如何找個安靜的空間寫報告?<span class="arrow"></span>
+          </div>
+        </summary>
+        <div class="answer-box">
+          駐外單位(本院無實體圖書館的地區)同仁在館藏查詢系統中，欲借的書”取書地點”的選項有兩種，<br /><br />
+          (1)一般圖書，取書地點請選「個人辦公室」<br /><br />
+          (2)福委會圖書，取書地點請選「駐外地區傳遞服務」，選妥後，圖書館將傳遞至系統預設的個人辦公地點(資料取自工研人系統)，或您可視需要自行修改傳遞位置。<br /><br />
+          原則上，「借書直送辦公室服務」，僅限一般圖書，針對駐外地區同仁特別增加提供「福委會圖書可借書直送辦公室」，但一次最多借閱3本。還書時請用院內掛號傳遞，若非院內傳遞點，則須自行用院外掛號方式郵遞。
+        </div>
+      </details>
+      <details>
+        <summary>
+          <div class="title">
+            Q4. 查到的文獻很多，如何有效整理?<span class="arrow"></span>
+          </div>
+        </summary>
+        <div class="answer-box">
+          駐外單位(本院無實體圖書館的地區)同仁在館藏查詢系統中，欲借的書”取書地點”的選項有兩種，<br /><br />
+          (1)一般圖書，取書地點請選「個人辦公室」<br /><br />
+          (2)福委會圖書，取書地點請選「駐外地區傳遞服務」，選妥後，圖書館將傳遞至系統預設的個人辦公地點(資料取自工研人系統)，或您可視需要自行修改傳遞位置。<br /><br />
+          原則上，「借書直送辦公室服務」，僅限一般圖書，針對駐外地區同仁特別增加提供「福委會圖書可借書直送辦公室」，但一次最多借閱3本。還書時請用院內掛號傳遞，若非院內傳遞點，則須自行用院外掛號方式郵遞。
+        </div>
+      </details>
+      <div class="more" onclick="location.href='#';">查看更多</div>
+    </div>
+  </section>
+
+  <footer class="inner">
+    <div class="info xs-hide">
+      版權所有© 2021 工業技術研究院 | 限院內同仁公務使用 禁止對外公開<br />
+      圖書館諮詢專線：18174；ersolib@itri.org.tw　|　網站設計製作：資訊處　|　<a href="#">FAQ</a>
+    </div>
+    <div class="info lg-hide sm-hide md-hide">
+      版權所有© 2021 工業技術研究院<br />
+      限院內同仁公務使用 禁止對外公開<br /><br />
+      圖書館諮詢專線：18174<br />
+      ersolib@itri.org.tw；<br />
+      網站設計製作：資訊處<br />
+      <a href="#">FAQ</a>
+    </div>
+  </footer>
+  <script src="./js/sidemenu.js"></script>
+</body>
+
+</html>

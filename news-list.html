@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>訊息公告 | 工研院圖書館 ITRI Library</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/basscss.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div id="sideMenu" class="side-menu">
+    <div class="menu-container">
+      <div class="menu-header">
+        <div class="collapse-btn" id="collapseBtn"></div>
+      </div>
+      <div class="details-container">
+        <details>
+          <summary>
+            <div class="title">
+              資源 Resource
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">查詢</div>
+            <ul>
+              <li><a href="#">館藏查詢</a></li>
+              <li><a href="#">研發探索系統</a></li>
+              <li><a href="#">全院期刊查詢</a></li>
+            </ul>
+            <div class="headline">電子資源</div>
+            <ul>
+              <li><a href="#">電子資料庫與使用工具</a></li>
+              <li><a href="#">電子期刊查詢</a></li>
+              <li><a href="#">全院可用電子圖書</a></li>
+              <li><a href="#">HyRead雲端圖書館</a></li>
+            </ul>
+            <div class="headline">精選資訊</div>
+            <ul>
+              <li><a href="#">進館新書</a></li>
+              <li><a href="#">主題書展</a></li>
+              <li><a href="#">產業資訊精選</a></li>
+              <li><a href="#">GRB政府計劃資訊分析</a></li>
+              <li><a href="#">2030策略藍圖PEST專題</a></li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <div class="title">
+              支援 Support
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">資源推薦</div>
+            <ul>
+              <li><a href="#">推薦/票選書刊</a></li>
+              <li><a href="#">試用/推薦資料庫</a></li>
+              <li><a href="#">團購資料</a></li>
+            </ul>
+            <div class="headline">使用者服務</div>
+            <ul>
+              <li><a href="#">我是新手</a></li>
+              <li><a href="#" class="na">我是研發人員</a></li>
+            </ul>
+            <div class="headline">研發輔助工具</div>
+            <ul>
+              <li><a href="#">館員精選資源</a></li>
+              <li><a href="#">研發助理/OA</a></li>
+              <li><a href="#">自訂主題追蹤</a></li>
+              <li><a href="#">ITRI詞庫</a></li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <div class="title">
+              服務 Service
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">我想要…</div>
+            <ul>
+              <li><a href="#">申請標準全文/館際文獻影印/借書</a></li>
+              <li><a href="#">查詢個人借閱/續借</a></li>
+              <li><a href="#">查詢申請紀錄</a></li>
+              <li><a href="#">訂閱電子報</a></li>
+              <li><a href="#">問問題</a></li>
+            </ul>
+            <div class="headline">課程與活動</div>
+            <ul>
+              <li><a href="#">課程講座</a></li>
+              <li><a href="#">科技展覽資訊</a></li>
+              <li>
+                <a href="#" class="na">工研人的閱讀筆記</a>
+              </li>
+            </ul>
+            <div class="headline">關於圖書館</div>
+            <ul>
+              <li><a href="#">訊息公告</a></li>
+              <li><a href="#">開放時間與介紹</a></li>
+              <li><a href="#">交換借書證與其他規則</a></li>
+              <li><a href="#">服務特色</a></li>
+            </ul>
+          </div>
+        </details>
+        <a href="#">
+          <div class="side-menu-link">研發探索系統</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <div id="menuBtn" class="menu lg-hide"></div>
+      <div class="logo"></div>
+      <div class="nav-bar xs-hide sm-hide md-hide">
+        <div class="row">
+          登入者：
+          <div class="user">張文怡</div>
+          <a href="https://itriweb.itri.org.tw/">ITRIWeb</a>
+          <form action="#">
+            <input type="text" placeholder="站內搜尋" name="search" />
+            <button type="submit" class="search-btn"></button>
+          </form>
+        </div>
+        <nav>
+          <div class="dropdown">
+            <span>資源 Resource</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">查詢</div>
+                <ul>
+                  <li><a href="#">館藏查詢</a></li>
+                  <li><a href="#">研發探索系統</a></li>
+                  <li><a href="#">全院期刊查詢</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">電子資源</div>
+                <ul>
+                  <li><a href="#">電子資料庫與使用工具</a></li>
+                  <li><a href="#">電子期刊查詢</a></li>
+                  <li><a href="#">全院可用電子圖書</a></li>
+                  <li><a href="#">HyRead雲端圖書館</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">精選資訊</div>
+                <ul>
+                  <li><a href="#">進館新書</a></li>
+                  <li><a href="#">主題書展</a></li>
+                  <li><a href="#">產業資訊精選</a></li>
+                  <li><a href="#">GRB政府計劃資訊分析</a></li>
+                  <li><a href="#">2030策略藍圖PEST專題</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <span>支援 Support</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">資源推薦</div>
+                <ul>
+                  <li><a href="#">推薦/票選書刊</a></li>
+                  <li><a href="#">試用/推薦資料庫</a></li>
+                  <li><a href="#">團購資料</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">使用者服務</div>
+                <ul>
+                  <li><a href="#">我是新手</a></li>
+                  <li><a href="#" class="na">我是研發人員</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">研發輔助工具</div>
+                <ul>
+                  <li><a href="#">館員精選資源</a></li>
+                  <li><a href="#">研發助理</a></li>
+                  <li><a href="#">自訂主題追蹤</a></li>
+                  <li><a href="#">ITRI詞庫</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <span>服務 Service</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">我想要…</div>
+                <ul>
+                  <li><a href="#">申請標準全文/館際文獻<br>影印/借書</a></li>
+                  <li><a href="#">查詢個人借閱/續借</a></li>
+                  <li><a href="#">查詢申請紀錄</a></li>
+                  <li><a href="#">訂閱電子報</a></li>
+                  <li><a href="#">問問題</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">課程與活動</div>
+                <ul>
+                  <li><a href="#">課程講座</a></li>
+                  <li><a href="#">科技展覽資訊</a></li>
+                  <li>
+                    <a href="#" class="na">工研人的閱讀筆記</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">關於圖書館</div>
+                <ul>
+                  <li><a href="#">訊息公告</a></li>
+                  <li><a href="#">開放時間與介紹</a></li>
+                  <li><a href="#">交換借書證與其他規則</a></li>
+                  <li><a href="#">服務特色</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="#">研發探索系統</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <ul class="breadcrumb">
+    <li><a href="#">首頁</a></li>
+    <li><a href="#">服務</a></li>
+    <li>訊息公告</li>
+  </ul>
+
+  <section class="news-list-container">
+    <div class="title">訊息公告</div>
+    <hr />
+    <div class="table-responsive">
+      <table>
+        <tr class="xs-hide sm-hide md-hide">
+          <th>項次</th>
+          <th>標題</th>
+          <th>張貼日期</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="topic">
+            <a class="pin" href="#">研發探索系統新增「2030技術策略與藍圖」八個主題PEST電子報訂閱服務，歡迎多加利用！</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <a class="pin" href="#">【歡迎報名】4/22 循迴永續—尋回海洋，尋回地球(線上講座)
+              ，可抵環境教育課程1.5小時</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            <a href="#">【清大圖書館考試期間暫停持互換借書證之讀者入館通知</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>
+            <a href="#">【歡迎報名】4/29 Goldfire 技術研發與專利分析(線上課程)</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>
+            <a href="#">【共好生活 永續環境】主題書</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>
+            <a href="#">研發探索系統新增「2030技術策略與藍圖」八個主題PEST電子報訂閱服務，歡迎多加利用！</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>
+            <a href="#">【歡迎報名】4/22 循迴永續—尋回海洋，尋回地球(線上講座)
+              ，可抵環境教育課程1.5小時</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>
+            <a href="#">【清大圖書館考試期間暫停持互換借書證之讀者入館通知</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>
+            <a href="#">【歡迎報名】4/29 Goldfire 技術研發與專利分析(線上課程)</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>
+            <a href="#">【共好生活 永續環境】主題書</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>
+            <a href="#">研發探索系統新增「2030技術策略與藍圖」八個主題PEST電子報訂閱服務，歡迎多加利用！</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>
+            <a href="#">【歡迎報名】4/22 循迴永續—尋回海洋，尋回地球(線上講座)
+              ，可抵環境教育課程1.5小時</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>
+            <a href="#">【清大圖書館考試期間暫停持互換借書證之讀者入館通知</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>
+            <a href="#">【歡迎報名】4/29 Goldfire 技術研發與專利分析(線上課程)</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>
+            <a href="#">【共好生活 永續環境】主題書</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>
+            <a href="#">研發探索系統新增「2030技術策略與藍圖」八個主題PEST電子報訂閱服務，歡迎多加利用！</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>
+            <a href="#">【歡迎報名】4/22 循迴永續—尋回海洋，尋回地球(線上講座)
+              ，可抵環境教育課程1.5小時</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>
+            <a href="#">【清大圖書館考試期間暫停持互換借書證之讀者入館通知</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>
+            <a href="#">【歡迎報名】4/29 Goldfire 技術研發與專利分析(線上課程)</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>
+            <a href="#">【共好生活 永續環境】主題書</a>
+          </td>
+          <td>2021/05/30</td>
+        </tr>
+      </table>
+    </div>
+    <div class="pagination">
+      <div class="info">共 <span>100</span> 筆資料</div>
+      <div class="button-row">
+        <button class="first">首頁</button>
+        <button class="prev">上頁</button>
+        <button class="active">1</button>
+        <!-- <span class="ellipses lg-hide">⋯</span> -->
+        <button>2</button>
+        <button>3</button><button>4</button><button>5</button><button class="next">下頁</button><button
+          class="last">末頁</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="inner">
+    <div class="info xs-hide">
+      版權所有© 2021 工業技術研究院 | 限院內同仁公務使用 禁止對外公開<br />
+      圖書館諮詢專線：18174；ersolib@itri.org.tw　|　網站設計製作：資訊處　|　<a href="#">FAQ</a>
+    </div>
+    <div class="info lg-hide sm-hide md-hide">
+      版權所有© 2021 工業技術研究院<br />
+      限院內同仁公務使用 禁止對外公開<br /><br />
+      圖書館諮詢專線：18174<br />
+      ersolib@itri.org.tw；<br />
+      網站設計製作：資訊處<br />
+      <a href="#">FAQ</a>
+    </div>
+  </footer>
+
+  <script src="./js/sidemenu.js"></script>
+</body>
+
+</html>

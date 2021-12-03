@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我要提問 | 工研院圖書館 ITRI Library</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/basscss.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div id="sideMenu" class="side-menu">
+    <div class="menu-container">
+      <div class="menu-header">
+        <div class="collapse-btn" id="collapseBtn"></div>
+      </div>
+      <div class="details-container">
+        <details>
+          <summary>
+            <div class="title">
+              資源 Resource
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">查詢</div>
+            <ul>
+              <li><a href="#">館藏查詢</a></li>
+              <li><a href="#">研發探索系統</a></li>
+              <li><a href="#">全院期刊查詢</a></li>
+            </ul>
+            <div class="headline">電子資源</div>
+            <ul>
+              <li><a href="#">電子資料庫與使用工具</a></li>
+              <li><a href="#">電子期刊查詢</a></li>
+              <li><a href="#">全院可用電子圖書</a></li>
+              <li><a href="#">HyRead雲端圖書館</a></li>
+            </ul>
+            <div class="headline">精選資訊</div>
+            <ul>
+              <li><a href="#">進館新書</a></li>
+              <li><a href="#">主題書展</a></li>
+              <li><a href="#">產業資訊精選</a></li>
+              <li><a href="#">GRB政府計劃資訊分析</a></li>
+              <li><a href="#">2030策略藍圖PEST專題</a></li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <div class="title">
+              支援 Support
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">資源推薦</div>
+            <ul>
+              <li><a href="#">推薦/票選書刊</a></li>
+              <li><a href="#">試用/推薦資料庫</a></li>
+              <li><a href="#">團購資料</a></li>
+            </ul>
+            <div class="headline">使用者服務</div>
+            <ul>
+              <li><a href="#">我是新手</a></li>
+              <li><a href="#" class="na">我是研發人員</a></li>
+            </ul>
+            <div class="headline">研發輔助工具</div>
+            <ul>
+              <li><a href="#">館員精選資源</a></li>
+              <li><a href="#">研發助理/OA</a></li>
+              <li><a href="#">自訂主題追蹤</a></li>
+              <li><a href="#">ITRI詞庫</a></li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <div class="title">
+              服務 Service
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">我想要…</div>
+            <ul>
+              <li><a href="#">申請標準全文/館際文獻影印/借書</a></li>
+              <li><a href="#">查詢個人借閱/續借</a></li>
+              <li><a href="#">查詢申請紀錄</a></li>
+              <li><a href="#">訂閱電子報</a></li>
+              <li><a href="#">問問題</a></li>
+            </ul>
+            <div class="headline">課程與活動</div>
+            <ul>
+              <li><a href="#">課程講座</a></li>
+              <li><a href="#">科技展覽資訊</a></li>
+              <li>
+                <a href="#" class="na">工研人的閱讀筆記</a>
+              </li>
+            </ul>
+            <div class="headline">關於圖書館</div>
+            <ul>
+              <li><a href="#">訊息公告</a></li>
+              <li><a href="#">開放時間與介紹</a></li>
+              <li><a href="#">交換借書證與其他規則</a></li>
+              <li><a href="#">服務特色</a></li>
+            </ul>
+          </div>
+        </details>
+        <a href="#">
+          <div class="side-menu-link">研發探索系統</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <div id="menuBtn" class="menu lg-hide"></div>
+      <div class="logo"></div>
+      <div class="nav-bar xs-hide sm-hide md-hide">
+        <div class="row">
+          登入者：
+          <div class="user">張文怡</div>
+          <a href="https://itriweb.itri.org.tw/">ITRIWeb</a>
+          <form action="#">
+            <input type="text" placeholder="站內搜尋" name="search" />
+            <button type="submit" class="search-btn"></button>
+          </form>
+        </div>
+        <nav>
+          <div class="dropdown">
+            <span>資源 Resource</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">查詢</div>
+                <ul>
+                  <li><a href="#">館藏查詢</a></li>
+                  <li><a href="#">研發探索系統</a></li>
+                  <li><a href="#">全院期刊查詢</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">電子資源</div>
+                <ul>
+                  <li><a href="#">電子資料庫與使用工具</a></li>
+                  <li><a href="#">電子期刊查詢</a></li>
+                  <li><a href="#">全院可用電子圖書</a></li>
+                  <li><a href="#">HyRead雲端圖書館</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">精選資訊</div>
+                <ul>
+                  <li><a href="#">進館新書</a></li>
+                  <li><a href="#">主題書展</a></li>
+                  <li><a href="#">產業資訊精選</a></li>
+                  <li><a href="#">GRB政府計劃資訊分析</a></li>
+                  <li><a href="#">2030策略藍圖PEST專題</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <span>支援 Support</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">資源推薦</div>
+                <ul>
+                  <li><a href="#">推薦/票選書刊</a></li>
+                  <li><a href="#">試用/推薦資料庫</a></li>
+                  <li><a href="#">團購資料</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">使用者服務</div>
+                <ul>
+                  <li><a href="#">我是新手</a></li>
+                  <li><a href="#" class="na">我是研發人員</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">研發輔助工具</div>
+                <ul>
+                  <li><a href="#">館員精選資源</a></li>
+                  <li><a href="#">研發助理</a></li>
+                  <li><a href="#">自訂主題追蹤</a></li>
+                  <li><a href="#">ITRI詞庫</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <span>服務 Service</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">我想要…</div>
+                <ul>
+                  <li><a href="#">申請標準全文/館際文獻<br>影印/借書</a></li>
+                  <li><a href="#">查詢個人借閱/續借</a></li>
+                  <li><a href="#">查詢申請紀錄</a></li>
+                  <li><a href="#">訂閱電子報</a></li>
+                  <li><a href="#">問問題</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">課程與活動</div>
+                <ul>
+                  <li><a href="#">課程講座</a></li>
+                  <li><a href="#">科技展覽資訊</a></li>
+                  <li>
+                    <a href="#" class="na">工研人的閱讀筆記</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">關於圖書館</div>
+                <ul>
+                  <li><a href="#">訊息公告</a></li>
+                  <li><a href="#">開放時間與介紹</a></li>
+                  <li><a href="#">交換借書證與其他規則</a></li>
+                  <li><a href="#">服務特色</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="#">研發探索系統</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <ul class="breadcrumb">
+    <li><a href="#">首頁</a></li>
+    <li><a href="#">服務</a></li>
+    <li><a href="#">問問題</a></li>
+    <li>我要提問</li>
+  </ul>
+
+  <section class="normal-container pb4">
+    <div class="title">我要提問</div>
+    <hr />
+    <span class="caption">使用說明</span>
+    <div class="text mb3">
+      填寫前可先查看常問問題FAQ有沒有您要問的問題喔！也建議您將相關的畫面或參考資料存檔後上載，以加速回覆處理時效！<br />
+      圖書館諮詢專線：18174<br />
+      The form is most appropriate to quick, simple questions that can be
+      answered in short responses (160 characters or less). For more detailed
+      questions or reference help, please contact a reference librarian at
+      your nearest library.
+    </div>
+    <span class="caption">問題填寫</span>
+    <div class="submit-container">
+      <div class="group break">
+        <label for="title" class="required">問題描述/Description of your question</label>
+        <textarea rows="8" name="title" placeholder="請說明問題"></textarea>
+        <span class="required-text">問題描述不可空白</span>
+      </div>
+      <div class="group">
+        <label for="title">上傳檔案/Upload files if needed</label>
+        <label for="askFile" class="upload-file">
+          <input type="file" id="askFile" name="filename" />
+          選擇檔案
+        </label>
+        <span id="filename">未選擇檔案</span>
+        <button class="remove-file" onclick="removeFile()"></button>
+      </div>
+      <div class="group">
+        <label for="title">申請日期/Application Date</label>
+        <div class="apply-date">2021/07/21</div>
+      </div>
+
+      <button onclick="toastSuccess(this)">送出問題</button>
+    </div>
+  </section>
+
+  <footer class="inner">
+    <div class="info xs-hide">
+      版權所有© 2021 工業技術研究院 | 限院內同仁公務使用 禁止對外公開<br />
+      圖書館諮詢專線：18174；ersolib@itri.org.tw　|　網站設計製作：資訊處　|　<a href="#">FAQ</a>
+    </div>
+    <div class="info lg-hide sm-hide md-hide">
+      版權所有© 2021 工業技術研究院<br />
+      限院內同仁公務使用 禁止對外公開<br /><br />
+      圖書館諮詢專線：18174<br />
+      ersolib@itri.org.tw；<br />
+      網站設計製作：資訊處<br />
+      <a href="#">FAQ</a>
+    </div>
+  </footer>
+
+  <div id="toastS" class="toast">
+    <div class="toast-card">
+      <div class="title">送出成功</div>
+      <div class="text">我們已收到您的問題。</div>
+      <button onclick="toastClose()">確定</button>
+    </div>
+  </div>
+  <div id="toastF" class="toast">
+    <div class="toast-card error">
+      <div class="title">送出失敗</div>
+      <div class="text">請檢查您的網路連線。</div>
+      <button onclick="toastClose()">確定</button>
+    </div>
+  </div>
+
+  <script>
+    function toastClose() {
+      const toast = document.getElementsByClassName("toast");
+      for (var i = 0; i < toast.length; i++) {
+        toast[i].style.display = "none";
+      }
+    }
+
+    function toastSuccess() {
+      const requiredInput = document.getElementsByClassName("required");
+      const toast = document.getElementById("toastS");
+      for (var i = 0; i < requiredInput.length; i++) {
+        var inputBox = requiredInput[i].nextElementSibling;
+        var requiredHint = inputBox.nextElementSibling;
+        if (inputBox.value.length == 0) {
+          inputBox.classList.add("input-highlight");
+          requiredHint.style.visibility = "visible";
+        } else {
+          inputBox.classList.remove("input-highlight");
+          requiredHint.style.visibility = "hidden";
+          toast.style.display = "block";
+        }
+      }
+    }
+
+    function toastError() {
+      const toast = document.getElementById("toastF");
+      toast.style.display = "block";
+    }
+  </script>
+
+  <script>
+    document.getElementById("askFile").onchange = function () {
+      document.getElementById("filename").innerText = this.files[0].name;
+      document.getElementsByClassName("remove-file")[0].style.display =
+        "inline-block";
+    };
+
+    function removeFile() {
+      document.getElementById("askFile").value = null;
+      document.getElementById("filename").innerText = "未選擇檔案";
+      document.getElementsByClassName("remove-file")[0].style.display =
+        "none";
+    }
+  </script>
+
+  <script src="./js/sidemenu.js"></script>
+</body>
+
+</html>

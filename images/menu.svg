@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <path d="M4.50000002,27.0000001 L31.5,27.0000001 L31.5,24.0000001 L4.50000002,24.0000001 L4.50000002,27.0000001 L4.50000002,27.0000001 Z M4.50000002,19.5000001 L31.5,19.5000001 L31.5,16.5000001 L4.50000002,16.5000001 L4.50000002,19.5000001 L4.50000002,19.5000001 Z M4.50000002,9.00000004 L4.50000002,12 L31.5,12 L31.5,9.00000004 L4.50000002,9.00000004 L4.50000002,9.00000004 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <polygon id="Base" points="0 0 36.0000001 0 36.0000001 36.0000001 0 36.0000001"></polygon>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Icon" fill="#444444" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>試用/推薦資料庫 | 工研院圖書館 ITRI Library</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/basscss.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div id="sideMenu" class="side-menu">
+    <div class="menu-container">
+      <div class="menu-header">
+        <div class="collapse-btn" id="collapseBtn"></div>
+      </div>
+      <div class="details-container">
+        <details>
+          <summary>
+            <div class="title">
+              資源 Resource
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">查詢</div>
+            <ul>
+              <li><a href="#">館藏查詢</a></li>
+              <li><a href="#">研發探索系統</a></li>
+              <li><a href="#">全院期刊查詢</a></li>
+            </ul>
+            <div class="headline">電子資源</div>
+            <ul>
+              <li><a href="#">電子資料庫與使用工具</a></li>
+              <li><a href="#">電子期刊查詢</a></li>
+              <li><a href="#">全院可用電子圖書</a></li>
+              <li><a href="#">HyRead雲端圖書館</a></li>
+            </ul>
+            <div class="headline">精選資訊</div>
+            <ul>
+              <li><a href="#">進館新書</a></li>
+              <li><a href="#">主題書展</a></li>
+              <li><a href="#">產業資訊精選</a></li>
+              <li><a href="#">GRB政府計劃資訊分析</a></li>
+              <li><a href="#">2030策略藍圖PEST專題</a></li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <div class="title">
+              支援 Support
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">資源推薦</div>
+            <ul>
+              <li><a href="#">推薦/票選書刊</a></li>
+              <li><a href="#">試用/推薦資料庫</a></li>
+              <li><a href="#">團購資料</a></li>
+            </ul>
+            <div class="headline">使用者服務</div>
+            <ul>
+              <li><a href="#">我是新手</a></li>
+              <li><a href="#" class="na">我是研發人員</a></li>
+            </ul>
+            <div class="headline">研發輔助工具</div>
+            <ul>
+              <li><a href="#">館員精選資源</a></li>
+              <li><a href="#">研發助理/OA</a></li>
+              <li><a href="#">自訂主題追蹤</a></li>
+              <li><a href="#">ITRI詞庫</a></li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <div class="title">
+              服務 Service
+              <span class="arrow"></span>
+            </div>
+          </summary>
+          <div class="group">
+            <div class="headline">我想要…</div>
+            <ul>
+              <li><a href="#">申請標準全文/館際文獻影印/借書</a></li>
+              <li><a href="#">查詢個人借閱/續借</a></li>
+              <li><a href="#">查詢申請紀錄</a></li>
+              <li><a href="#">訂閱電子報</a></li>
+              <li><a href="#">問問題</a></li>
+            </ul>
+            <div class="headline">課程與活動</div>
+            <ul>
+              <li><a href="#">課程講座</a></li>
+              <li><a href="#">科技展覽資訊</a></li>
+              <li>
+                <a href="#" class="na">工研人的閱讀筆記</a>
+              </li>
+            </ul>
+            <div class="headline">關於圖書館</div>
+            <ul>
+              <li><a href="#">訊息公告</a></li>
+              <li><a href="#">開放時間與介紹</a></li>
+              <li><a href="#">交換借書證與其他規則</a></li>
+              <li><a href="#">服務特色</a></li>
+            </ul>
+          </div>
+        </details>
+        <a href="#">
+          <div class="side-menu-link">研發探索系統</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <div id="menuBtn" class="menu lg-hide"></div>
+      <div class="logo"></div>
+      <div class="nav-bar xs-hide sm-hide md-hide">
+        <div class="row">
+          登入者：
+          <div class="user">張文怡</div>
+          <a href="https://itriweb.itri.org.tw/">ITRIWeb</a>
+          <form action="#">
+            <input type="text" placeholder="站內搜尋" name="search" />
+            <button type="submit" class="search-btn"></button>
+          </form>
+        </div>
+        <nav>
+          <div class="dropdown">
+            <span>資源 Resource</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">查詢</div>
+                <ul>
+                  <li><a href="#">館藏查詢</a></li>
+                  <li><a href="#">研發探索系統</a></li>
+                  <li><a href="#">全院期刊查詢</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">電子資源</div>
+                <ul>
+                  <li><a href="#">電子資料庫與使用工具</a></li>
+                  <li><a href="#">電子期刊查詢</a></li>
+                  <li><a href="#">全院可用電子圖書</a></li>
+                  <li><a href="#">HyRead雲端圖書館</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">精選資訊</div>
+                <ul>
+                  <li><a href="#">進館新書</a></li>
+                  <li><a href="#">主題書展</a></li>
+                  <li><a href="#">產業資訊精選</a></li>
+                  <li><a href="#">GRB政府計劃資訊分析</a></li>
+                  <li><a href="#">2030策略藍圖PEST專題</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <span>支援 Support</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">資源推薦</div>
+                <ul>
+                  <li><a href="#">推薦/票選書刊</a></li>
+                  <li><a href="#">試用/推薦資料庫</a></li>
+                  <li><a href="#">團購資料</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">使用者服務</div>
+                <ul>
+                  <li><a href="#">我是新手</a></li>
+                  <li><a href="#" class="na">我是研發人員</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">研發輔助工具</div>
+                <ul>
+                  <li><a href="#">館員精選資源</a></li>
+                  <li><a href="#">研發助理</a></li>
+                  <li><a href="#">自訂主題追蹤</a></li>
+                  <li><a href="#">ITRI詞庫</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <span>服務 Service</span>
+            <div class="content">
+              <div class="group">
+                <div class="headline">我想要…</div>
+                <ul>
+                  <li><a href="#">申請標準全文/館際文獻<br>影印/借書</a></li>
+                  <li><a href="#">查詢個人借閱/續借</a></li>
+                  <li><a href="#">查詢申請紀錄</a></li>
+                  <li><a href="#">訂閱電子報</a></li>
+                  <li><a href="#">問問題</a></li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">課程與活動</div>
+                <ul>
+                  <li><a href="#">課程講座</a></li>
+                  <li><a href="#">科技展覽資訊</a></li>
+                  <li>
+                    <a href="#" class="na">工研人的閱讀筆記</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="group">
+                <div class="headline">關於圖書館</div>
+                <ul>
+                  <li><a href="#">訊息公告</a></li>
+                  <li><a href="#">開放時間與介紹</a></li>
+                  <li><a href="#">交換借書證與其他規則</a></li>
+                  <li><a href="#">服務特色</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="#">研發探索系統</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <ul class="breadcrumb">
+    <li><a href="#">首頁</a></li>
+    <li><a href="#">服務</a></li>
+    <li>試用/推薦資料庫</li>
+  </ul>
+
+  <section class="normal-container pb4">
+    <div class="title">試用/推薦資料庫</div>
+    <div class="tab-bar">
+      <div class="pane active">試用資料庫</div>
+      <div class="pane">推薦資料庫</div>
+    </div>
+    <div class="post-box">
+      <span class="caption">試用說明</span>
+      <div class="text">
+        敬請把握試用期多加使用， 並填寫試用意見調查以作為評估訂購之參考。
+      </div>
+    </div>
+
+    <div class="db-container">
+      <div class="db-card" onclick="extend(this)">
+        <div class="row">
+          <div class="card-info">
+            <div class="title">
+              <a href="#">MIC AISP 情報顧問服務</a>
+            </div>
+            <div class="rule">在院內環境下即可連線使用</div>
+          </div>
+          <div class="trial-info">
+            <div class="period">試用期間：2021/05/01-2021/05/31</div>
+            <a href="#" class="survey">填寫試用問卷</a>
+          </div>
+        </div>
+        <div class="db-text">
+          資策會MIC
+          AISP情報顧問服務資料庫，提供ICT相關產業之市場、產品、技術及競爭態勢之研究，以及即時的產業決策情報與顧問服務，有助於探勘競爭情報、洞見技術與創新需求脈絡、規劃技術策略。本次試用15主題詳見公告。
+        </div>
+        <div class="notice-box">
+          <span class="notice">注意事項：</span>2011年2月因同仁使用自動下載軟體，有系統地大量擷取期刊資料，導致ACS對該IP予以停權三週。請同仁使用電子資源時應遵守相關規定。
+        </div>
+        <div class="db-row">
+          <div class="link-group">
+            <a href="#" class="manual">操作手冊</a>
+          </div>
+          <div class="extend"></div>
+        </div>
+      </div>
+      <div class="db-card" onclick="extend(this)">
+        <div class="row">
+          <div class="card-info">
+            <div class="title">
+              <a href="#">MIC AISP 情報顧問服務</a>
+            </div>
+            <div class="rule">在院內環境下即可連線使用</div>
+          </div>
+          <div class="trial-info">
+            <div class="period">試用期間：2021/05/01-2021/05/31</div>
+            <a href="#" class="survey">填寫試用問卷</a>
+          </div>
+        </div>
+        <div class="db-text">
+          資策會MIC
+          AISP情報顧問服務資料庫，提供ICT相關產業之市場、產品、技術及競爭態勢之研究，以及即時的產業決策情報與顧問服務，有助於探勘競爭情報、洞見技術與創新需求脈絡、規劃技術策略。本次試用15主題詳見公告。
+        </div>
+        <div class="notice-box">
+          <span class="notice">注意事項：</span>2011年2月因同仁使用自動下載軟體，有系統地大量擷取期刊資料，導致ACS對該IP予以停權三週。請同仁使用電子資源時應遵守相關規定。
+        </div>
+        <div class="db-row">
+          <div class="link-group">
+            <a href="#" class="manual">操作手冊</a>
+          </div>
+          <div class="extend"></div>
+        </div>
+      </div>
+      <div class="db-card" onclick="extend(this)">
+        <div class="row">
+          <div class="card-info">
+            <div class="title">
+              <a href="#">MIC AISP 情報顧問服務</a>
+            </div>
+            <div class="rule">在院內環境下即可連線使用</div>
+          </div>
+          <div class="trial-info">
+            <div class="period">試用期間：2021/05/01-2021/05/31</div>
+            <a href="#" class="survey">填寫試用問卷</a>
+          </div>
+        </div>
+        <div class="db-text">
+          資策會MIC
+          AISP情報顧問服務資料庫，提供ICT相關產業之市場、產品、技術及競爭態勢之研究，以及即時的產業決策情報與顧問服務，有助於探勘競爭情報、洞見技術與創新需求脈絡、規劃技術策略。本次試用15主題詳見公告。
+        </div>
+        <div class="notice-box">
+          <span class="notice">注意事項：</span>2011年2月因同仁使用自動下載軟體，有系統地大量擷取期刊資料，導致ACS對該IP予以停權三週。請同仁使用電子資源時應遵守相關規定。
+        </div>
+        <div class="db-row">
+          <div class="link-group">
+            <a href="#" class="manual">操作手冊</a>
+          </div>
+          <div class="extend"></div>
+        </div>
+      </div>
+      <div class="db-card" onclick="extend(this)">
+        <div class="row">
+          <div class="card-info">
+            <div class="title">
+              <a href="#">MIC AISP 情報顧問服務</a>
+            </div>
+            <div class="rule">在院內環境下即可連線使用</div>
+          </div>
+          <div class="trial-info">
+            <div class="period">試用期間：2021/05/01-2021/05/31</div>
+            <a href="#" class="survey">填寫試用問卷</a>
+          </div>
+        </div>
+        <div class="db-text">
+          資策會MIC
+          AISP情報顧問服務資料庫，提供ICT相關產業之市場、產品、技術及競爭態勢之研究，以及即時的產業決策情報與顧問服務，有助於探勘競爭情報、洞見技術與創新需求脈絡、規劃技術策略。本次試用15主題詳見公告。
+        </div>
+        <div class="notice-box">
+          <span class="notice">注意事項：</span>2011年2月因同仁使用自動下載軟體，有系統地大量擷取期刊資料，導致ACS對該IP予以停權三週。請同仁使用電子資源時應遵守相關規定。
+        </div>
+        <div class="db-row">
+          <div class="link-group">
+            <a href="#" class="manual">操作手冊</a>
+          </div>
+          <div class="extend"></div>
+        </div>
+      </div>
+      <div class="db-card" onclick="extend(this)">
+        <div class="row">
+          <div class="card-info">
+            <div class="title">
+              <a href="#">MIC AISP 情報顧問服務</a>
+            </div>
+            <div class="rule">在院內環境下即可連線使用</div>
+          </div>
+          <div class="trial-info">
+            <div class="period">試用期間：2021/05/01-2021/05/31</div>
+            <a href="#" class="survey">填寫試用問卷</a>
+          </div>
+        </div>
+        <div class="db-text">
+          資策會MIC
+          AISP情報顧問服務資料庫，提供ICT相關產業之市場、產品、技術及競爭態勢之研究，以及即時的產業決策情報與顧問服務，有助於探勘競爭情報、洞見技術與創新需求脈絡、規劃技術策略。本次試用15主題詳見公告。
+        </div>
+        <div class="notice-box">
+          <span class="notice">注意事項：</span>2011年2月因同仁使用自動下載軟體，有系統地大量擷取期刊資料，導致ACS對該IP予以停權三週。請同仁使用電子資源時應遵守相關規定。
+        </div>
+        <div class="db-row">
+          <div class="link-group">
+            <a href="#" class="manual">操作手冊</a>
+          </div>
+          <div class="extend"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="inner">
+    <div class="info xs-hide">
+      版權所有© 2021 工業技術研究院 | 限院內同仁公務使用 禁止對外公開<br />
+      圖書館諮詢專線：18174；ersolib@itri.org.tw　|　網站設計製作：資訊處　|　<a href="#">FAQ</a>
+    </div>
+    <div class="info lg-hide sm-hide md-hide">
+      版權所有© 2021 工業技術研究院<br />
+      限院內同仁公務使用 禁止對外公開<br /><br />
+      圖書館諮詢專線：18174<br />
+      ersolib@itri.org.tw；<br />
+      網站設計製作：資訊處<br />
+      <a href="#">FAQ</a>
+    </div>
+  </footer>
+
+  <div id="toastS" class="toast">您的推薦單已成功送出。</div>
+  <div id="toastF" class="toast error">報名失敗，請檢查您的網路連線。</div>
+
+  <script>
+    function toastSuccess(el) {
+      const toast = document.getElementById("toastS");
+      toast.classList.add("show");
+      el.disabled = true;
+      setTimeout(function () {
+        toast.className = toast.className.replace("show", "");
+        el.disabled = false;
+      }, 3000);
+    }
+
+    function toastError() {
+      const toast = document.getElementById("toastF");
+      toast.classList.add("show");
+      setTimeout(function () {
+        toast.className = toast.className.replace("show", "");
+      }, 3000);
+    }
+  </script>
+
+  <script>
+    function extend(el) {
+      const cardText = el.querySelector(".db-text");
+      const cardNotice = el.querySelector(".notice-box");
+      const arrow = el.querySelector(".extend");
+      cardText.classList.toggle("show");
+      cardNotice.classList.toggle("show");
+      arrow.classList.toggle("collapse");
+    }
+  </script>
+
+  <script>
+    var x = document.getElementsByClassName("db-card");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      const dbCard = document.getElementsByClassName("db-card")[i];
+      const dbText = dbCard.querySelector(".db-text");
+      const dbNotice = dbCard.querySelector(".notice-box");
+      const btnExtend = dbCard.querySelector(".extend");
+
+      if (dbNotice === null) {
+        if (dbText.scrollHeight > dbText.clientHeight) {
+          console.log("extendable card detected");
+        } else {
+          btnExtend.style.display = "none";
+        }
+      } else {
+        if (
+          dbText.scrollHeight > dbText.clientHeight ||
+          dbNotice.scrollHeight > dbNotice.clientHeight
+        ) {
+          console.log("extendable card detected");
+        } else {
+          btnExtend.style.display = "none";
+        }
+      }
+    }
+  </script>
+
+  <script>
+    window.addEventListener("resize", function () {
+      "use strict";
+      window.location.reload();
+    });
+  </script>
+
+  <!-- <script>
+      const mq = window.matchMedia("(min-width: 40em)");
+      if (mq.matches) {
+        document.getElementById("searchDatabase").placeholder =
+          "請輸入資料庫名稱/Search by database name";
+      } else {
+        document.getElementById("searchDatabase").placeholder =
+          "請輸入資料庫名稱";
+      }
+    </script>
+
+    <script>
+      const filterBox = document.querySelectorAll(".db-card");
+
+      document
+        .querySelector(".filter-row")
+        .addEventListener("click", (event) => {
+          if (event.target.tagName !== "A") return false;
+          let filterClass = event.target.dataset["f"];
+
+          filterBox.forEach((elem) => {
+            elem.classList.remove("hide");
+            if (
+              !elem.classList.contains(filterClass) &&
+              filterClass !== "all"
+            ) {
+              elem.classList.add("hide");
+            }
+          });
+        });
+    </script> -->
+
+  <script src="./js/sidemenu.js"></script>
+</body>
+
+</html>

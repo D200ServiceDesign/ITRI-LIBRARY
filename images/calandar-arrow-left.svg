@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="11px" viewBox="0 0 12 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>calandar-arrow-left</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="calandar-arrow-left" transform="translate(1.000000, 1.000000)" stroke="#979797">
+            <g id="Group-2" transform="translate(6.000000, 0.000000)">
+                <line x1="3.5" y1="0.5" x2="0.5" y2="4.5" id="Line-6"></line>
+                <line x1="3.5" y1="4.5" x2="0.5" y2="8.5" id="Line-6-Copy" transform="translate(2.000000, 6.500000) scale(1, -1) translate(-2.000000, -6.500000) "></line>
+            </g>
+            <g id="Group-2-Copy">
+                <line x1="3.5" y1="0.5" x2="0.5" y2="4.5" id="Line-6"></line>
+                <line x1="3.5" y1="4.5" x2="0.5" y2="8.5" id="Line-6-Copy" transform="translate(2.000000, 6.500000) scale(1, -1) translate(-2.000000, -6.500000) "></line>
+            </g>
+        </g>
+    </g>
+</svg>
