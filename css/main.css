@@ -397,12 +397,6 @@ section.event .event-container .swiper-container, section.new .new-container .sw
   }
 }
 
-section.event .event-container .swiper-container .swiper-wrapper, section.new .new-container .swiper-container .swiper-wrapper {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 section.event .event-container .swiper-container .swiper-pagination, section.new .new-container .swiper-container .swiper-pagination {
   display: block;
 }
