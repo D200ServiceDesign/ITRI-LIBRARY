@@ -577,6 +577,11 @@ header {
         visibility: visible;
         top: 48px;
       }
+      &:hover .content-2 {
+        opacity: 1;
+        visibility: visible;
+        top: 48px;
+      }
 
       .content {
         display: flex;
@@ -593,6 +598,67 @@ header {
         position: absolute;
         top: 40px;
         left: -200px;
+        z-index: 1;
+        transition: all 0.5s cubic-bezier(0.25, 1.2, 0.25, 1) 0.1s;
+
+        .group {
+          box-sizing: border-box;
+
+          &:nth-of-type(2) {
+            margin: 0 30px;
+          }
+
+          .headline {
+            font-weight: 700;
+            font-size: 18px;
+            color: $theme-secondary-color;
+            white-space: nowrap;
+          }
+
+          ul {
+            margin: 12px 0 0 0;
+            padding: 0;
+            list-style: none;
+
+            a {
+              color: $primary-color;
+              text-decoration: none;
+              font-size: 16px;
+              font-weight: normal;
+              line-height: 28px;
+              white-space: nowrap;
+
+              &:hover {
+                opacity: 0.8;
+              }
+
+              &.na {
+                color: #c2bfb5;
+
+                &::after {
+                  content: "\A(敬請期待)";
+                  white-space: pre;
+                }
+              }
+            }
+          }
+        }
+      }
+      .content-2 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        opacity: 0;
+        visibility: hidden;
+        // width: auto;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        background: #fefbed;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+        position: absolute;
+        top: 40px;
+        right: -50px;
         z-index: 1;
         transition: all 0.5s cubic-bezier(0.25, 1.2, 0.25, 1) 0.1s;
 
@@ -2156,7 +2222,7 @@ section.normal-container {
 
       .headline {
         font-weight: 500;
-        color: $theme-secondary-color;
+        color: $primary-color;
       }
     }
   }
