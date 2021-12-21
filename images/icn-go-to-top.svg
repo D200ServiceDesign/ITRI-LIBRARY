@@ -1,0 +1,12 @@
+<svg width="70" height="70" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <circle fill="#999" cx="35" cy="35" r="35"/>
+        <g fill="#FFF" fill-rule="nonzero">
+            <path d="M34.306 15.782a1.5 1.5 0 0 1 1.913-2.306l.118.098 16.928 15.571a1.5 1.5 0 0 1-1.913 2.306l-.118-.098-16.928-15.57z"/>
+            <path d="M17.306 29.145a1.5 1.5 0 0 0 1.913 2.306l.118-.098 16.928-15.57a1.5 1.5 0 0 0-1.913-2.307l-.118.098-16.928 15.571z"/>
+        </g>
+        <text font-family="NotoSans-Medium, Noto Sans" font-size="18" font-weight="400" fill="#FFF">
+                    <tspan x="17" y="54">TOP</tspan>
+                </text>
+    </g>
+</svg>

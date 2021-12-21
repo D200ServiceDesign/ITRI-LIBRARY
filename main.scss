@@ -4107,3 +4107,17 @@ section.feature {
     }
   }
 }
+
+#gototop-btn {
+  display: none;
+  width: 70px;
+  height: 70px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: url("../images/icn-go-to-top.svg");
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 999;
+}
