@@ -130,14 +130,7 @@ $tablet-width: calc(100vw - 32px);
     text-align: left;
     color: $primary-color;
     border-radius: 0;
-
-    @include mobile {
-      white-space: nowrap;
-    }
-
-    @include tablet {
-      white-space: nowrap;
-    }
+    white-space: nowrap;
     tr {
       height: 52px;
       border-bottom: 1px solid #cccccc;
@@ -1978,16 +1971,25 @@ section.normal-container {
 
   table th.cell-wrap,
   table td.cell-wrap {
-    max-width: 400px;
-    @include mobile {
-      min-width: 400px;
-      max-width: 400px;
-      white-space: normal;
-    }
-    @include tablet {
-      min-width: 400px;
-      max-width: 400px;
-      white-space: normal;
+    white-space: normal;
+  }
+
+  table th.course-name {
+    max-width: 360px;
+    min-width: 360px;
+  }
+
+  table th.attachment {
+    max-width: 124px;
+    min-width: 124px;
+  }
+
+  table td a {
+    color: #007bd8;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 

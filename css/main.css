@@ -129,18 +129,7 @@ section.news .news-container .link-box .link-1, section.news .news-container .li
   text-align: left;
   color: #444444;
   border-radius: 0;
-}
-
-@media only screen and (max-width: 40em) {
-  .table-responsive table {
-    white-space: nowrap;
-  }
-}
-
-@media only screen and (min-width: 40em) and (max-width: 64em) {
-  .table-responsive table {
-    white-space: nowrap;
-  }
+  white-space: nowrap;
 }
 
 .table-responsive table tr {
@@ -2249,25 +2238,26 @@ section.normal-container .filter-row a:hover {
 
 section.normal-container table th.cell-wrap,
 section.normal-container table td.cell-wrap {
-  max-width: 400px;
+  white-space: normal;
 }
 
-@media only screen and (max-width: 40em) {
-  section.normal-container table th.cell-wrap,
-  section.normal-container table td.cell-wrap {
-    min-width: 400px;
-    max-width: 400px;
-    white-space: normal;
-  }
+section.normal-container table th.course-name {
+  max-width: 360px;
+  min-width: 360px;
 }
 
-@media only screen and (min-width: 40em) and (max-width: 64em) {
-  section.normal-container table th.cell-wrap,
-  section.normal-container table td.cell-wrap {
-    min-width: 400px;
-    max-width: 400px;
-    white-space: normal;
-  }
+section.normal-container table th.attachment {
+  max-width: 124px;
+  min-width: 124px;
+}
+
+section.normal-container table td a {
+  color: #007bd8;
+  text-decoration: none;
+}
+
+section.normal-container table td a:hover {
+  text-decoration: underline;
 }
 
 section.normal-container .db-container .db-card {
