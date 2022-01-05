@@ -2241,12 +2241,16 @@ section.normal-container table td.cell-wrap {
   white-space: normal;
 }
 
-section.normal-container table th.course-name {
+section.normal-container table th.course-name,
+section.normal-container table td.course-name {
+  width: 360px;
   max-width: 360px;
   min-width: 360px;
 }
 
-section.normal-container table th.attachment {
+section.normal-container table th.attachment,
+section.normal-container table td.attachment {
+  width: 124px;
   max-width: 124px;
   min-width: 124px;
 }

@@ -1974,12 +1974,16 @@ section.normal-container {
     white-space: normal;
   }
 
-  table th.course-name {
+  table th.course-name,
+  table td.course-name {
+    width: 360px;
     max-width: 360px;
     min-width: 360px;
   }
 
-  table th.attachment {
+  table th.attachment,
+  table td.attachment {
+    width: 124px;
     max-width: 124px;
     min-width: 124px;
   }
