@@ -4010,6 +4010,7 @@ section.feature {
 
 .modal {
   display: none;
+  overflow: scroll;
   position: fixed;
   z-index: 999;
   left: 0;
