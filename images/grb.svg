@@ -1,0 +1,36 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-11.5%" y="-6.6%" width="123%" height="118.4%" filterUnits="objectBoundingBox" id="8byfsed15c">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <filter x="-20.4%" y="-6.3%" width="132.5%" height="132.5%" filterUnits="objectBoundingBox" id="fqxh6ha1ee">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <path d="M25.014 29.71h41.062l15.808 15.678v56.41a4 4 0 0 1-4 4h-52.87a4 4 0 0 1-4-4V33.71a4 4 0 0 1 4-4z" id="8m2nghtqbd"/>
+        <path d="M67.364 29.99 81.12 43.747a1 1 0 0 1-.707 1.708H66.657a1 1 0 0 1-1-1V30.697a1 1 0 0 1 1.707-.707z" id="2gotw55bof"/>
+        <circle id="iogeotvx5a" cx="50" cy="50" r="50"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="2wibmri4bb" fill="#fff">
+            <use xlink:href="#iogeotvx5a"/>
+        </mask>
+        <use fill="#EEE" xlink:href="#iogeotvx5a"/>
+        <g mask="url(#2wibmri4bb)">
+            <use fill="#000" filter="url(#8byfsed15c)" xlink:href="#8m2nghtqbd"/>
+            <use fill="#FFF" xlink:href="#8m2nghtqbd"/>
+        </g>
+        <circle fill="#FFF" cx="33.5" cy="25.5" r="1.5"/>
+        <use fill="#000" filter="url(#fqxh6ha1ee)" xlink:href="#2gotw55bof"/>
+        <use fill="#FCF5C9" xlink:href="#2gotw55bof"/>
+        <path stroke="#EEE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M29.363 58.505h22.506"/>
+        <path stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M25.5 22v-6M22.5 19h6"/>
+        <path stroke="#EEE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="m29.357 67.253 28.936.252M29.363 75.505h22.506"/>
+        <text font-family="NotoSansTC-Bold, Noto Sans TC" font-size="12" font-weight="bold" fill="#CCC">
+                        <tspan x="27.52" y="51">GRB</tspan>
+                    </text>
+    </g>
+</svg>

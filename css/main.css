@@ -1,12 +1,12 @@
 @charset "UTF-8";
-.table-responsive table td a, section.news .news-container .more, section.event .event-container .more, section.new .new-container .more, section.normal-container .more, section.feature .feature-container .more, .nav-bar .row a, section.news .news-container table td a, section.news .news-container .link-box a, ul.breadcrumb li a, section.news-list-container .table-responsive table td a, section.normal-container .text a, section.normal-container article a, section.normal-container .sort-box ul li a,
-section.normal-container .sort-control-box ul li a, section.hero .hero-container ul.breadcrumb li a, section.feature .feature-container .feature-card .text a {
+.table-responsive table td a, section.news .news-container .more, section.event .event-container .more, section.new .new-container .more, section.normal-container .more, section.feature .feature-container .more, section.recommendation .rec-container .type .type-card .more, .nav-bar .row a, section.news .news-container table td a, section.news .news-container .link-box a, ul.breadcrumb li a, section.news-list-container .table-responsive table td a, section.normal-container .text a, section.normal-container article a, section.normal-container .sort-box ul li a,
+section.normal-container .sort-control-box ul li a, section.hero .hero-container ul.breadcrumb li a, section.feature .feature-container .feature-card .text a, section.recommendation .rec-container .type .type-card .swiper-container ul li a {
   text-decoration: none;
   color: #444444;
 }
 
-.table-responsive table td a:hover, section.news .news-container .more:hover, section.event .event-container .more:hover, section.new .new-container .more:hover, section.normal-container .more:hover, section.feature .feature-container .more:hover, .nav-bar .row a:hover, section.news .news-container table td a:hover, section.news .news-container .link-box a:hover, ul.breadcrumb li a:hover, section.news-list-container .table-responsive table td a:hover, section.normal-container .text a:hover, section.normal-container article a:hover, section.normal-container .sort-box ul li a:hover,
-section.normal-container .sort-control-box ul li a:hover, section.hero .hero-container ul.breadcrumb li a:hover, section.feature .feature-container .feature-card .text a:hover {
+.table-responsive table td a:hover, section.news .news-container .more:hover, section.event .event-container .more:hover, section.new .new-container .more:hover, section.normal-container .more:hover, section.feature .feature-container .more:hover, section.recommendation .rec-container .type .type-card .more:hover, .nav-bar .row a:hover, section.news .news-container table td a:hover, section.news .news-container .link-box a:hover, ul.breadcrumb li a:hover, section.news-list-container .table-responsive table td a:hover, section.normal-container .text a:hover, section.normal-container article a:hover, section.normal-container .sort-box ul li a:hover,
+section.normal-container .sort-control-box ul li a:hover, section.hero .hero-container ul.breadcrumb li a:hover, section.feature .feature-container .feature-card .text a:hover, section.recommendation .rec-container .type .type-card .swiper-container ul li a:hover {
   opacity: 0.8;
 }
 
@@ -345,7 +345,7 @@ section.normal-container .submit-container .group [type="radio"]:checked + label
   display: block;
 }
 
-section.news .news-container .more, section.event .event-container .more, section.new .new-container .more, section.normal-container .more, section.feature .feature-container .more {
+section.news .news-container .more, section.event .event-container .more, section.new .new-container .more, section.normal-container .more, section.feature .feature-container .more, section.recommendation .rec-container .type .type-card .more {
   margin: 12px 0;
   line-height: 34px;
   text-align: right;
@@ -353,19 +353,19 @@ section.news .news-container .more, section.event .event-container .more, sectio
 }
 
 @media only screen and (max-width: 40em) {
-  section.news .news-container .more, section.event .event-container .more, section.new .new-container .more, section.normal-container .more, section.feature .feature-container .more {
+  section.news .news-container .more, section.event .event-container .more, section.new .new-container .more, section.normal-container .more, section.feature .feature-container .more, section.recommendation .rec-container .type .type-card .more {
     text-align: center;
   }
 }
 
 @media only screen and (min-width: 40em) and (max-width: 64em) {
-  section.news .news-container .more, section.event .event-container .more, section.new .new-container .more, section.normal-container .more, section.feature .feature-container .more {
+  section.news .news-container .more, section.event .event-container .more, section.new .new-container .more, section.normal-container .more, section.feature .feature-container .more, section.recommendation .rec-container .type .type-card .more {
     text-align: center;
   }
 }
 
-section.news .news-container .more::after, section.event .event-container .more::after, section.new .new-container .more::after, section.normal-container .more::after, section.feature .feature-container .more::after {
-  padding: 5px 17px;
+section.news .news-container .more::after, section.event .event-container .more::after, section.new .new-container .more::after, section.normal-container .more::after, section.feature .feature-container .more::after, section.recommendation .rec-container .type .type-card .more::after {
+  padding: 6px 17px;
   margin-left: 12px;
   content: "";
   background: url("../images/news-more.svg");
@@ -1470,7 +1470,8 @@ section.new .new-container .swiper-container .swiper-slide {
 
 section.new .new-container .swiper-button-custom-prev,
 section.new .new-container .swiper-button-custom-prev-2,
-section.new .new-container .swiper-button-custom-prev-3 {
+section.new .new-container .swiper-button-custom-prev-3,
+section.new .new-container .swiper-button-custom-prev-4 {
   width: 20px;
   height: 35px;
   background-image: url("../images/prev.svg");
@@ -1483,7 +1484,8 @@ section.new .new-container .swiper-button-custom-prev-3 {
 
 section.new .new-container .swiper-button-custom-next,
 section.new .new-container .swiper-button-custom-next-2,
-section.new .new-container .swiper-button-custom-next-3 {
+section.new .new-container .swiper-button-custom-next-3,
+section.new .new-container .swiper-button-custom-next-4 {
   width: 20px;
   height: 35px;
   background-image: url("../images/next.svg");
@@ -4808,5 +4810,246 @@ section.feature .feature-container .feature-card b {
   bottom: 1em;
   right: 1em;
   z-index: 999;
+}
+
+section.recommendation {
+  background: #ffffff;
+  width: 100%;
+}
+
+section.recommendation .rec-container {
+  width: 64em;
+  overflow: auto;
+  margin: 0 auto;
+  padding: 20px 0 60px 0;
+}
+
+@media only screen and (max-width: 40em) {
+  section.recommendation .rec-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 40em) and (max-width: 64em) {
+  section.recommendation .rec-container {
+    width: calc(100vw - 32px);
+  }
+}
+
+section.recommendation .rec-container .title {
+  font-weight: 500;
+  font-size: 28px;
+  color: #373a3c;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 40em) {
+  section.recommendation .rec-container .title {
+    font-size: 22px;
+  }
+}
+
+section.recommendation .rec-container .type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.recommendation .rec-container .type .type-card {
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  width: calc(50% - 8px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 12px 16px;
+  height: 386px;
+  position: relative;
+}
+
+section.recommendation .rec-container .type .type-card .headings {
+  color: #999;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+section.recommendation .rec-container .type .type-card .more {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+}
+
+section.recommendation .rec-container .type .type-card.default {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.recommendation .rec-container .type .type-card .card-icon {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.recommendation .rec-container .type .type-card .grb {
+  background-image: url("../images/grb.svg");
+}
+
+section.recommendation .rec-container .type .type-card .pest {
+  background-image: url("../images/pest.svg");
+}
+
+section.recommendation .rec-container .type .type-card .headline {
+  font-size: 18px;
+  color: #444444;
+  margin: 12px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+section.recommendation .rec-container .type .type-card .text {
+  width: 390px;
+}
+
+section.recommendation .rec-container .type .type-card button {
+  border: 0;
+  border-radius: 4px;
+  background: #f5df4d;
+  padding: 8px 16px;
+  color: #373a3c;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 24px auto;
+}
+
+section.recommendation .rec-container .type .type-card button:hover {
+  background: #fcf5c9;
+}
+
+section.recommendation .rec-container .type .type-card button:active {
+  background: #dcc845;
+}
+
+@media only screen and (max-width: 40em) {
+  section.recommendation .rec-container .type .type-card button {
+    width: 100%;
+  }
+}
+
+section.recommendation .rec-container .type .type-card .topic {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 24px 0 36px 0;
+}
+
+section.recommendation .rec-container .type .type-card .topic .num {
+  margin-right: 12px;
+}
+
+section.recommendation .rec-container .type .type-card .topic.class-a {
+  color: #00a3ff;
+}
+
+section.recommendation .rec-container .type .type-card .topic.class-b {
+  color: #f1c216;
+}
+
+section.recommendation .rec-container .type .type-card .topic.class-c {
+  color: #36c966;
+}
+
+section.recommendation .rec-container .type .type-card .topic.class-t {
+  color: #af46eb;
+}
+
+section.recommendation .rec-container .type .type-card hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  top: 112px;
+  left: 0;
+}
+
+section.recommendation .rec-container .type .type-card .swiper-container {
+  width: 100%;
+  position: relative;
+}
+
+section.recommendation .rec-container .type .type-card .swiper-container ul {
+  margin: 0;
+  margin-top: 60px;
+  padding: 0;
+  list-style: none;
+}
+
+section.recommendation .rec-container .type .type-card .swiper-container ul li {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section.recommendation .rec-container .type .type-card .swiper-container ul li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  line-height: 24px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #f5df4d;
+}
+
+section.recommendation .rec-container .type .type-card .swiper-button-custom-prev-4,
+section.recommendation .rec-container .type .type-card .swiper-button-custom-prev-5 {
+  width: 20px;
+  height: 35px;
+  background-image: url("../images/prev.svg");
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  left: 16px;
+  display: none;
+}
+
+section.recommendation .rec-container .type .type-card .swiper-button-custom-next-4,
+section.recommendation .rec-container .type .type-card .swiper-button-custom-next-5 {
+  width: 20px;
+  height: 35px;
+  background-image: url("../images/next.svg");
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  right: 16px;
+  display: none;
+}
+
+section.recommendation .rec-container .type .type-card:hover .swiper-button-custom-prev-4,
+section.recommendation .rec-container .type .type-card:hover .swiper-button-custom-next-4,
+section.recommendation .rec-container .type .type-card:hover .swiper-button-custom-prev-5,
+section.recommendation .rec-container .type .type-card:hover .swiper-button-custom-next-5 {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
