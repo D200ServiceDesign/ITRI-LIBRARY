@@ -1,0 +1,49 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-11.5%" y="-6.6%" width="123%" height="118.4%" filterUnits="objectBoundingBox" id="3y5jyhdpuc">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <filter x="-20.4%" y="-6.3%" width="132.5%" height="132.5%" filterUnits="objectBoundingBox" id="p2oaaltzse">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <path d="M25.014 29.71h41.062l15.808 15.678v56.41a4 4 0 0 1-4 4h-52.87a4 4 0 0 1-4-4V33.71a4 4 0 0 1 4-4z" id="jmt6wpepod"/>
+        <path d="M67.364 29.99 81.12 43.747a1 1 0 0 1-.707 1.708H66.657a1 1 0 0 1-1-1V30.697a1 1 0 0 1 1.707-.707z" id="ly8vut086f"/>
+        <circle id="wqfysvd4qa" cx="50" cy="50" r="50"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="4pc6f754hb" fill="#fff">
+            <use xlink:href="#wqfysvd4qa"/>
+        </mask>
+        <use fill="#EEE" xlink:href="#wqfysvd4qa"/>
+        <g mask="url(#4pc6f754hb)">
+            <use fill="#000" filter="url(#3y5jyhdpuc)" xlink:href="#jmt6wpepod"/>
+            <use fill="#FFF" xlink:href="#jmt6wpepod"/>
+        </g>
+        <rect fill="#EEE" mask="url(#4pc6f754hb)" x="33" y="48" width="16" height="16" rx="2"/>
+        <rect fill="#EEE" mask="url(#4pc6f754hb)" x="33" y="68" width="16" height="16" rx="2"/>
+        <rect fill="#EEE" mask="url(#4pc6f754hb)" x="53" y="48" width="16" height="16" rx="2"/>
+        <rect fill="#EEE" mask="url(#4pc6f754hb)" x="53" y="68" width="16" height="16" rx="8"/>
+        <text mask="url(#4pc6f754hb)" font-family="NotoSansTC-Bold, Noto Sans TC" font-size="12" font-weight="bold" fill="#CCC">
+                        <tspan x="36.998" y="61">P</tspan>
+                    </text>
+        <text mask="url(#4pc6f754hb)" font-family="NotoSansTC-Bold, Noto Sans TC" font-size="12" font-weight="bold" fill="#CCC">
+                        <tspan x="57.31" y="61">E</tspan>
+                    </text>
+        <text mask="url(#4pc6f754hb)" font-family="NotoSansTC-Bold, Noto Sans TC" font-size="12" font-weight="bold" fill="#CCC">
+                        <tspan x="37.256" y="81">S</tspan>
+                    </text>
+        <text mask="url(#4pc6f754hb)" font-family="NotoSansTC-Bold, Noto Sans TC" font-size="12" font-weight="bold" fill="#CCC">
+                        <tspan x="57.25" y="81">T</tspan>
+                    </text>
+        <g mask="url(#4pc6f754hb)">
+            <use fill="#000" filter="url(#p2oaaltzse)" xlink:href="#ly8vut086f"/>
+            <use fill="#FCF5C9" xlink:href="#ly8vut086f"/>
+        </g>
+        <circle fill="#FFF" mask="url(#4pc6f754hb)" cx="33.5" cy="25.5" r="1.5"/>
+        <path stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#4pc6f754hb)" d="M25.5 22v-6M22.5 19h6"/>
+    </g>
+</svg>
