@@ -4881,6 +4881,12 @@ section.recommendation .rec-container .text {
   width: 415px;
 }
 
+@media only screen and (max-width: 40em) {
+  section.recommendation .rec-container .text {
+    width: auto;
+  }
+}
+
 section.recommendation .rec-container .book-default {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4907,6 +4913,13 @@ section.recommendation .rec-container .type {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 40em) {
+  section.recommendation .rec-container .type {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 section.recommendation .rec-container .type .type-card {
   background-color: #ffffff;
   border-radius: 4px;
@@ -4917,6 +4930,15 @@ section.recommendation .rec-container .type .type-card {
   padding: 12px 16px;
   height: 386px;
   position: relative;
+}
+
+@media only screen and (max-width: 40em) {
+  section.recommendation .rec-container .type .type-card {
+    width: 100%;
+  }
+  section.recommendation .rec-container .type .type-card:nth-child(1) {
+    margin-bottom: 24px;
+  }
 }
 
 section.recommendation .rec-container .type .type-card .headings {
