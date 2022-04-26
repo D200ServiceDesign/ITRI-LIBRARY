@@ -392,7 +392,117 @@
             </div>
           </div>
         </div>
-        <div id="tab-6" class="tab-pane">4556</div>
+        <div id="tab-6" class="tab-pane">
+          <div class="swiper-container swiperSix">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習 不塑過日子
+                    -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習 不塑過日子
+                    -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book">
+                  <div class="book-cover">
+                    <img src="./images/book-image3.png" alt="" />
+                  </div>
+                  <div class="book-name">
+                    不塑過日子 -家裡零垃圾的極簡生活練習
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-custom-prev-6"></div>
+          <div class="swiper-button-custom-next-6"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -789,7 +899,6 @@
           </div>
           <div class="swiper-button-custom-prev-3"></div>
           <div class="swiper-button-custom-next-3"></div>
-          <div class="more" onclick="location.href='#';">更多新書</div>
         </div>
       </div>
     </div>
@@ -1101,6 +1210,63 @@
       navigation: {
         nextEl: ".swiper-button-custom-next-5",
         prevEl: ".swiper-button-custom-prev-5",
+      },
+    });
+
+    var swiper6 = new Swiper(".swiperSix", {
+      resizeObserver: true,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+        delay: 6000,
+      },
+      pagination: {
+        el: ".swiper-paginations",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-custom-next",
+        prevEl: ".swiper-button-custom-prev",
+      },
+      breakpoints: {
+        640: {
+          resizeObserver: true,
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: false,
+          autoplay: {
+            delay: 6000,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-custom-next-6",
+            prevEl: ".swiper-button-custom-prev-6",
+          },
+        },
+        1024: {
+          resizeObserver: true,
+          slidesPerView: 5,
+          slidesPerGroup: 5,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          autoplay: {
+            delay: 6000,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-custom-next-6",
+            prevEl: ".swiper-button-custom-prev-6",
+          },
+        },
       },
     });
   </script>

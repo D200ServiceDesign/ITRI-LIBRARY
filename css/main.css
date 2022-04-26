@@ -374,45 +374,45 @@ section.news .news-container .more::after, section.event .event-container .more:
   height: 34px;
 }
 
-section.event .event-container .swiper-container, section.new .new-container .swiper-container {
+section.event .event-container .swiper-container, section.new .new-container .swiper-container, section.recommendation .rec-container #tab-6 .swiper-container {
   width: 64em;
   height: 298px;
 }
 
 @media only screen and (max-width: 40em) {
-  section.event .event-container .swiper-container, section.new .new-container .swiper-container {
+  section.event .event-container .swiper-container, section.new .new-container .swiper-container, section.recommendation .rec-container #tab-6 .swiper-container {
     width: 88vw;
     height: 248px;
   }
 }
 
-section.event .event-container .swiper-container .swiper-pagination, section.new .new-container .swiper-container .swiper-pagination {
+section.event .event-container .swiper-container .swiper-pagination, section.new .new-container .swiper-container .swiper-pagination, section.recommendation .rec-container #tab-6 .swiper-container .swiper-pagination {
   display: block;
 }
 
 @media only screen and (max-width: 40em) {
-  section.event .event-container .swiper-container .swiper-pagination, section.new .new-container .swiper-container .swiper-pagination {
+  section.event .event-container .swiper-container .swiper-pagination, section.new .new-container .swiper-container .swiper-pagination, section.recommendation .rec-container #tab-6 .swiper-container .swiper-pagination {
     display: none;
   }
 }
 
-section.event .event-container .swiper-container .swiper-pagination-bullet, section.new .new-container .swiper-container .swiper-pagination-bullet {
+section.event .event-container .swiper-container .swiper-pagination-bullet, section.new .new-container .swiper-container .swiper-pagination-bullet, section.recommendation .rec-container #tab-6 .swiper-container .swiper-pagination-bullet {
   background: transparent;
   border: 1px solid #444444;
   opacity: 1;
 }
 
-section.event .event-container .swiper-container .swiper-pagination-bullet-active, section.new .new-container .swiper-container .swiper-pagination-bullet-active {
+section.event .event-container .swiper-container .swiper-pagination-bullet-active, section.new .new-container .swiper-container .swiper-pagination-bullet-active, section.recommendation .rec-container #tab-6 .swiper-container .swiper-pagination-bullet-active {
   background: #444444;
 }
 
-section.event .event-container .swiper-container .swiper-button-next, section.new .new-container .swiper-container .swiper-button-next {
+section.event .event-container .swiper-container .swiper-button-next, section.new .new-container .swiper-container .swiper-button-next, section.recommendation .rec-container #tab-6 .swiper-container .swiper-button-next {
   color: #444444;
   opacity: 0.4;
   right: 0;
 }
 
-section.event .event-container .swiper-container .swiper-button-prev, section.new .new-container .swiper-container .swiper-button-prev {
+section.event .event-container .swiper-container .swiper-button-prev, section.new .new-container .swiper-container .swiper-button-prev, section.recommendation .rec-container #tab-6 .swiper-container .swiper-button-prev {
   color: #444444;
   opacity: 0.4;
   left: 0;
@@ -4850,6 +4850,54 @@ section.recommendation .rec-container .title {
   }
 }
 
+section.recommendation .rec-container .card-icon {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.recommendation .rec-container .card-icon.grb {
+  background-image: url("../images/grb.svg");
+}
+
+section.recommendation .rec-container .card-icon.pest {
+  background-image: url("../images/pest.svg");
+}
+
+section.recommendation .rec-container .card-icon.book {
+  background-image: url("../images/book.svg");
+}
+
+section.recommendation .rec-container .headline {
+  font-size: 18px;
+  color: #444444;
+  margin: 12px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+section.recommendation .rec-container .text {
+  width: 415px;
+}
+
+section.recommendation .rec-container .book-default {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 48px 0 60px 0;
+}
+
 section.recommendation .rec-container .type {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4897,33 +4945,6 @@ section.recommendation .rec-container .type .type-card.default {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-section.recommendation .rec-container .type .type-card .card-icon {
-  width: 100px;
-  height: 100px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-section.recommendation .rec-container .type .type-card .grb {
-  background-image: url("../images/grb.svg");
-}
-
-section.recommendation .rec-container .type .type-card .pest {
-  background-image: url("../images/pest.svg");
-}
-
-section.recommendation .rec-container .type .type-card .headline {
-  font-size: 18px;
-  color: #444444;
-  margin: 12px 0;
-  font-weight: bold;
-  text-align: center;
-}
-
-section.recommendation .rec-container .type .type-card .text {
-  width: 390px;
 }
 
 section.recommendation .rec-container .type .type-card button {
@@ -5051,5 +5072,104 @@ section.recommendation .rec-container .type .type-card:hover .swiper-button-cust
 section.recommendation .rec-container .type .type-card:hover .swiper-button-custom-prev-5,
 section.recommendation .rec-container .type .type-card:hover .swiper-button-custom-next-5 {
   display: block;
+}
+
+section.recommendation .rec-container #tab-6 .swiper-container {
+  width: calc(64em - 40px);
+}
+
+@media only screen and (max-width: 40em) {
+  section.recommendation .rec-container #tab-6 .swiper-container {
+    width: calc(88vw - 40px);
+  }
+}
+
+@media only screen and (min-width: 40em) and (max-width: 64em) {
+  section.recommendation .rec-container #tab-6 .swiper-container {
+    width: calc(calc(100vw - 32px) - 40px);
+  }
+}
+
+section.recommendation .rec-container #tab-6 .swiper-container .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.recommendation .rec-container #tab-6 .swiper-button-custom-prev-6 {
+  width: 20px;
+  height: 35px;
+  background-image: url("../images/prev.svg");
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 114px;
+  left: 0;
+}
+
+section.recommendation .rec-container #tab-6 .swiper-button-custom-next-6 {
+  width: 20px;
+  height: 35px;
+  background-image: url("../images/next.svg");
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 114px;
+  right: 0;
+}
+
+section.recommendation .rec-container #tab-6 .book {
+  width: 180px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (max-width: 40em) {
+  section.recommendation .rec-container #tab-6 .book {
+    width: 88vw;
+  }
+}
+
+@media only screen and (min-width: 40em) and (max-width: 64em) {
+  section.recommendation .rec-container #tab-6 .book {
+    width: calc(calc(100vw - 32px) / 3);
+  }
+}
+
+section.recommendation .rec-container #tab-6 .book .book-cover {
+  padding: 8px;
+  background: #ffffff;
+  height: 194px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section.recommendation .rec-container #tab-6 .book .book-cover img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+section.recommendation .rec-container #tab-6 .book .book-name {
+  padding: 4px 8px;
+  height: 48px;
+  line-height: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@media only screen and (max-width: 40em) {
+  section.recommendation .rec-container #tab-6 .book .book-name {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
