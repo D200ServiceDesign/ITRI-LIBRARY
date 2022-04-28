@@ -16,6 +16,18 @@
 </head>
 
 <body>
+  <div class="sidebar">
+    <div class="headline">歡迎來到每月推薦</div>
+    <div class="text">為協助研發同仁即時掌握計畫可提案的重點趨勢，以院2030策略藍圖為主題，每月為您推薦您研究領域最相關的提案參考資訊。</div>
+    <div class="no-data"></div>
+    <div class="text">目前沒有推薦<br>敬請期待 : )</div>
+  </div>
+
+  <div class="tag" onclick="sidebarOnOff()">
+    <!-- <span class="new"></span> -->
+    <div class="name">為您推薦</div>
+  </div>
+
   <button onclick="goToTop()" id="gototop-btn"></button>
 
   <div class="modal" id="welcome">
@@ -1171,6 +1183,13 @@
     };
     window.addEventListener("click", closeModal);
     window.addEventListener("touchend", closeModal);
+  </script>
+
+  <script>
+    function sidebarOnOff() {
+      const sidebar = document.querySelector(".sidebar");
+      sidebar.classList.toggle("expanded");
+    }
   </script>
 </body>
 

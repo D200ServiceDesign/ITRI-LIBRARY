@@ -1,0 +1,32 @@
+<svg width="118" height="106" viewBox="0 0 118 106" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="69.037%" y1="30.609%" x2="29.358%" y2="70.666%" id="w35ig98ngb">
+            <stop stop-color="#E8E8E8" offset="0%"/>
+            <stop stop-color="#CCC" offset="100%"/>
+        </linearGradient>
+        <filter x="-12%" y="-13.6%" width="124%" height="127.3%" filterUnits="objectBoundingBox" id="cbtvqsxs1a">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g transform="translate(9 9)" fill="none" fill-rule="evenodd">
+        <g filter="url(#cbtvqsxs1a)">
+            <path fill="url(#w35ig98ngb)" transform="rotate(-45 50.03 36.467)" d="m24.244 10.681 35.712 15.86 15.86 35.712-35.711-15.86z"/>
+            <path fill="#FFF" d="m13.563 36.437 36.467 14.04v37.505l-36.467-15.09z"/>
+            <path fill="#EEE" d="M86.467 36.437 50 50.477v37.505l36.467-15.09zM13.563 36.467 0 50.458 36.846 65.7 50 50.458z"/>
+            <path fill="#EEE" d="M13.563 36.566 0 22.575 36.846 7.333 50 22.575z"/>
+            <path fill="#D8D8D8" d="M86.437 36.437 100 50.427 63.154 65.67 50 50.428z"/>
+            <path fill="#D8D8D8" d="M86.437 36.536 100 22.545 63.154 7.303 50 22.545z"/>
+        </g>
+        <circle fill="#FFF" cx="44.444" cy="30.575" r="1.852"/>
+        <circle fill="#FFF" cx="56.481" cy="26.871" r="1.852"/>
+        <circle stroke="#FFF" stroke-width="2" cx="37.037" cy="16.686" r="1.778"/>
+        <circle stroke="#FFF" stroke-width="2" cx="56.481" cy="39.834" r="1.778"/>
+        <path stroke="#FFF" stroke-width="2" fill="#D8D8D8" stroke-linecap="round" stroke-linejoin="round" d="M64.352 24.093v-6.481M33.796 36.13v-6.481M61.111 20.852h6.482M30.556 32.889h6.481"/>
+    </g>
+</svg>

@@ -16,6 +16,30 @@
 </head>
 
 <body>
+  <div class="sidebar">
+    <div class="headline">歡迎來到每月推薦</div>
+    <div class="text">為協助研發同仁即時掌握計畫可提案的重點趨勢，以院2030策略藍圖為主題，每月為您推薦您研究領域最相關的提案參考資訊。</div>
+    <hr>
+    <div class="title">GRB政府計劃</div>
+    <div class="topic"><a href="#typeGRB"><span class="class-c">C1-3</span>生物質應用產業創新技術 (12 筆)</a></div>
+    <div class="topic"><a href="#typeGRB"><span class="class-c">C1-1</span>生物質應用產業創新技術 (5 筆)</a></div>
+    <hr>
+    <div class="title">2030策略藍圖PEST專題</div>
+    <div class="topic"><a href="#typePEST"><span class="class-a">A1</span>個人化裝置與服務 (12 筆)</a></div>
+    <div class="topic"><a href="#typePEST"><span class="class-c">C1-1</span>生物質應用產業創新技術 (5 筆)</a></div>
+    <hr>
+    <div class="title">精選圖書</div>
+    <div class="topic books"><a href="#">UX for XR[electronic resource]</a></div>
+    <div class="topic books"><a href="#">不塑過日子 -家裡零垃圾的極簡生活練習</a></div>
+    <div class="topic books"><a href="#">不塑過日子 -家裡零垃圾的極簡生活練習不塑過日子 -家裡零垃圾的極簡生活練習</a></div>
+    <button>查看更多</button>
+    <hr>
+  </div>
+  <div class="tag" onclick="sidebarOnOff()">
+    <span class="new"></span>
+    <div class="name">為您推薦</div>
+  </div>
+
   <button onclick="goToTop()" id="gototop-btn"></button>
 
   <div class="modal" id="welcome">
@@ -330,7 +354,7 @@
       <div class="tab-content">
         <div id="tab-5" class="tab-pane active">
           <div class="type">
-            <div class="type-card">
+            <div class="type-card" id="typeGRB">
               <div class="headings">GRB政府計劃</div>
               <div class="swiper-container swiperFour">
                 <div class="swiper-wrapper">
@@ -361,7 +385,7 @@
               <div class="swiper-button-custom-next-4"></div>
               <div class="more" onclick="location.href='#';">更多推薦</div>
             </div>
-            <div class="type-card">
+            <div class="type-card" id="typePEST">
               <div class="headings">2030策略藍圖PEST專題</div>
               <div class="swiper-container swiperFive">
                 <div class="swiper-wrapper">
@@ -1321,6 +1345,13 @@
     };
     window.addEventListener("click", closeModal);
     window.addEventListener("touchend", closeModal);
+  </script>
+
+  <script>
+    function sidebarOnOff() {
+      const sidebar = document.querySelector(".sidebar");
+      sidebar.classList.toggle("expanded");
+    }
   </script>
 </body>
 
