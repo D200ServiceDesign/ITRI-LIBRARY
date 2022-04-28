@@ -1,12 +1,12 @@
 @charset "UTF-8";
 .table-responsive table td a, section.news .news-container .more, section.event .event-container .more, section.new .new-container .more, section.normal-container .more, section.feature .feature-container .more, section.recommendation .rec-container .type .type-card .more, .nav-bar .row a, section.news .news-container table td a, section.news .news-container .link-box a, ul.breadcrumb li a, section.news-list-container .table-responsive table td a, section.normal-container .text a, section.normal-container article a, section.normal-container .sort-box ul li a,
-section.normal-container .sort-control-box ul li a, section.hero .hero-container ul.breadcrumb li a, section.feature .feature-container .feature-card .text a, section.recommendation .rec-container .type .type-card .swiper-container ul li a {
+section.normal-container .sort-control-box ul li a, section.hero .hero-container ul.breadcrumb li a, section.feature .feature-container .feature-card .text a, section.recommendation .rec-container .type .type-card .swiper-container ul li a, .sidebar .topic a {
   text-decoration: none;
   color: #444444;
 }
 
 .table-responsive table td a:hover, section.news .news-container .more:hover, section.event .event-container .more:hover, section.new .new-container .more:hover, section.normal-container .more:hover, section.feature .feature-container .more:hover, section.recommendation .rec-container .type .type-card .more:hover, .nav-bar .row a:hover, section.news .news-container table td a:hover, section.news .news-container .link-box a:hover, ul.breadcrumb li a:hover, section.news-list-container .table-responsive table td a:hover, section.normal-container .text a:hover, section.normal-container article a:hover, section.normal-container .sort-box ul li a:hover,
-section.normal-container .sort-control-box ul li a:hover, section.hero .hero-container ul.breadcrumb li a:hover, section.feature .feature-container .feature-card .text a:hover, section.recommendation .rec-container .type .type-card .swiper-container ul li a:hover {
+section.normal-container .sort-control-box ul li a:hover, section.hero .hero-container ul.breadcrumb li a:hover, section.feature .feature-container .feature-card .text a:hover, section.recommendation .rec-container .type .type-card .swiper-container ul li a:hover, .sidebar .topic a:hover {
   opacity: 0.8;
 }
 
@@ -4932,6 +4932,12 @@ section.recommendation .rec-container .type .type-card {
   position: relative;
 }
 
+section.recommendation .rec-container .type .type-card:target {
+  -webkit-box-shadow: 0 0 0 2px rgba(245, 223, 77, 0.3);
+          box-shadow: 0 0 0 2px rgba(245, 223, 77, 0.3);
+  scroll-margin-top: 132px;
+}
+
 @media only screen and (max-width: 40em) {
   section.recommendation .rec-container .type .type-card {
     width: 100%;
@@ -5193,5 +5199,232 @@ section.recommendation .rec-container #tab-6 .book .book-name {
   section.recommendation .rec-container #tab-6 .book .book-name {
     text-align: center;
   }
+}
+
+.sidebar {
+  position: fixed;
+  right: -312px;
+  bottom: 0;
+  height: calc(100vh - 124px);
+  background-color: #ffffff;
+  width: 312px;
+  z-index: 99;
+  display: none;
+  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+  padding: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sidebar .headline {
+  font-weight: 500;
+  font-size: 18px;
+  color: #444444;
+  margin-bottom: 8px;
+}
+
+.sidebar .text {
+  font-size: 14px;
+  color: #999999;
+  line-height: normal;
+}
+
+.sidebar hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 16px -16px;
+}
+
+.sidebar .title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444444;
+  margin-bottom: 8px;
+}
+
+.sidebar .title::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #f5df4d;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 8px;
+}
+
+.sidebar button {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background: transparent;
+  padding: 7px 15px;
+  color: #444444;
+  font-weight: 500;
+  margin: 24px 0;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background: #fcf5c9;
+}
+
+.sidebar button:active {
+  background: #f9ec94;
+}
+
+.sidebar .topic {
+  font-size: 14px;
+  color: rgba(68, 68, 68, 0.87);
+  line-height: 22px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.sidebar .topic.books::before {
+  content: "- ";
+  margin-left: 18px;
+}
+
+.sidebar .topic a:hover {
+  color: #3aa0ff;
+  text-decoration: underline;
+}
+
+.sidebar .topic span {
+  margin-right: 12px;
+  margin-left: 18px;
+  text-align: right;
+  display: inline-block;
+  width: 30px;
+}
+
+.sidebar .topic .class-a {
+  color: #00a3ff;
+}
+
+.sidebar .topic .class-b {
+  color: #f1c216;
+}
+
+.sidebar .topic .class-c {
+  color: #36c966;
+}
+
+.sidebar .topic .class-t {
+  color: #af46eb;
+}
+
+.sidebar .no-data {
+  width: 100%;
+  height: 106px;
+  background-image: url("../images/sidebar-empty.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.sidebar .no-data ~ .text {
+  text-align: center;
+}
+
+.sidebar.expanded ~ .tag .name::before {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.sidebar.expanded {
+  right: 0;
+  display: block;
+}
+
+.tag {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 55px;
+  height: 187px;
+  background-color: #f5df4d;
+  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 16px 0 0 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 999;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.tag:before, .tag:after {
+  position: absolute;
+  content: "";
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M16,0 L16,16 L0,16 C8.7313589,16 15.8292047,9.00609896 15.9969636,0.314870665 L16,0 Z' id='Combined-Shape' fill='%23F4DF4C'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  top: -16px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.tag:after {
+  top: unset;
+  bottom: -16px;
+  -webkit-transform: scaley(-1);
+          transform: scaley(-1);
+}
+
+.tag span.new {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 16px;
+  background-color: #ec7d33;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+          clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.tag span.new:before {
+  content: "NEW";
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  -webkit-transform: rotate(-45deg) translatex(-3px) translatey(2px);
+          transform: rotate(-45deg) translatex(-3px) translatey(2px);
+  display: block;
+}
+
+.tag .name {
+  font-size: 18px;
+  font-weight: 500;
+  width: 18px;
+  line-height: 28px;
+  color: #444444;
+}
+
+.tag .name::before {
+  content: "";
+  width: 18px;
+  height: 28px;
+  display: block;
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='8px' height='12px' viewBox='0 0 8 12' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='triangle-copy-4-(1)' fill='%23444444'%3E%3Cpolygon id='Path' points='0 6 8 0 8 12'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sidebar.expanded ~ .tag {
+  right: 312px;
 }
 /*# sourceMappingURL=main.css.map */
