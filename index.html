@@ -32,7 +32,7 @@
     <div class="topic books"><a href="#">UX for XR[electronic resource]</a></div>
     <div class="topic books"><a href="#">不塑過日子 -家裡零垃圾的極簡生活練習</a></div>
     <div class="topic books"><a href="#">不塑過日子 -家裡零垃圾的極簡生活練習不塑過日子 -家裡零垃圾的極簡生活練習</a></div>
-    <button>查看更多</button>
+    <button onclick="toAnchorTab()">查看更多</button>
     <hr>
   </div>
   <div class="tag" onclick="sidebarOnOff()">
@@ -1352,6 +1352,37 @@
       const sidebar = document.querySelector(".sidebar");
       sidebar.classList.toggle("expanded");
     }
+
+    function toAnchorTab() {
+      const secRecommendation = document.querySelector(".recommendation");
+      const headerHeight = document.querySelector("header").offsetHeight;
+      window.scroll(0, secRecommendation.offsetTop - headerHeight);
+      var tab1 = document.getElementsByClassName("tab")[0].querySelectorAll("a")[0];
+      var tabp1 = document.getElementById("tab-5");
+      var tab2 = document.getElementsByClassName("tab")[0].querySelectorAll("a")[1];
+      var tabp2 = document.getElementById("tab-6");
+      tab1.classList.remove("active");
+      tabp1.classList.remove("active");
+      tabp2.classList.add("active");
+      tab2.classList.add("active");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const topics = document.querySelectorAll(".topic");
+      for (let i = 0; i < topics.length; i++) {
+        const topicLink = topics[i].querySelector("a");
+        topicLink.addEventListener("click", function () {
+          var tab1 = document.getElementsByClassName("tab")[0].querySelectorAll("a")[0];
+          var tabp1 = document.getElementById("tab-5");
+          var tab2 = document.getElementsByClassName("tab")[0].querySelectorAll("a")[1];
+          var tabp2 = document.getElementById("tab-6");
+          tab2.classList.remove("active");
+          tabp2.classList.remove("active");
+          tabp1.classList.add("active");
+          tab1.classList.add("active");
+        });
+      }
+    });
   </script>
 </body>
 

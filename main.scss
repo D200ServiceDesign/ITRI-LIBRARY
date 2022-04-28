@@ -424,6 +424,10 @@ header {
   width: 100%;
   box-sizing: border-box;
   border-bottom: 8px solid $theme-color;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 
 .header-container {
@@ -721,9 +725,15 @@ section.hero-search {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 124px;
 
   @include mobile {
     background-size: auto 100%;
+    margin-top: 84px;
+  }
+
+  @include tablet {
+    margin-top: 84px;
   }
 
   .hero-container {
@@ -1603,7 +1613,7 @@ footer {
 // News-List
 ul.breadcrumb {
   width: $content-width;
-  margin: 30px auto 70px auto;
+  margin: 154px auto 70px auto;
   padding: 0;
   list-style: none;
 
@@ -1613,6 +1623,7 @@ ul.breadcrumb {
 
   @include tablet {
     width: $tablet-width;
+    margin-top: 114px;
   }
 
   & li {
@@ -1641,6 +1652,7 @@ section.news-list-container {
 
   @include mobile {
     width: $mobile-width;
+    margin-top: 124px;
   }
 
   @include tablet {
@@ -1879,6 +1891,7 @@ section.normal-container {
 
   @include mobile {
     width: $mobile-width;
+    margin-top: 84px;
   }
 
   @include tablet {
@@ -3555,17 +3568,20 @@ section.hero {
   background-size: 100% 100%;
   background-position-y: 40%;
   height: 521px;
+  margin-top: 124px;
 
   @include mobile {
     height: 321px;
     background-size: auto 100%;
     background-position: center;
+    margin-top: 84px;
   }
 
   @include tablet {
     height: 321px;
     background-size: 100% 100%;
     background-position: center;
+    margin-top: 84px;
   }
 
   @include xl-screen {
@@ -4204,17 +4220,20 @@ section.recommendation {
         flex-wrap: wrap;
       }
       .type-card {
+        display: inline-block;
         background-color: #ffffff;
         border-radius: 4px;
         border: 1px solid #cccccc;
-        width: calc(50% - 8px);
+        width: calc(50% - 16px);
         box-sizing: border-box;
         padding: 12px 16px;
+        margin: 2px;
         height: 386px;
+        box-sizing: border-box;
         position: relative;
         &:target {
           box-shadow: 0 0 0 2px rgba(245, 223, 77, 0.3);
-          scroll-margin-top: 132px;
+          scroll-margin-top: 256px;
         }
         @include mobile {
           width: 100%;
