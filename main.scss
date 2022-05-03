@@ -4232,8 +4232,10 @@ section.recommendation {
         box-sizing: border-box;
         position: relative;
         &:target {
-          box-shadow: 0 0 0 2px rgba(245, 223, 77, 0.3);
           scroll-margin-top: 256px;
+        }
+        &.highlight {
+          box-shadow: 0 0 0 2px rgba(245, 223, 77, 0.3);
         }
         @include mobile {
           width: 100%;

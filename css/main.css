@@ -4954,9 +4954,12 @@ section.recommendation .rec-container .type .type-card {
 }
 
 section.recommendation .rec-container .type .type-card:target {
+  scroll-margin-top: 256px;
+}
+
+section.recommendation .rec-container .type .type-card.highlight {
   -webkit-box-shadow: 0 0 0 2px rgba(245, 223, 77, 0.3);
           box-shadow: 0 0 0 2px rgba(245, 223, 77, 0.3);
-  scroll-margin-top: 256px;
 }
 
 @media only screen and (max-width: 40em) {

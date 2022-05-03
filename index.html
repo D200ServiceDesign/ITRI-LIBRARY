@@ -1381,8 +1381,33 @@
           tabp1.classList.add("active");
           tab1.classList.add("active");
         });
+      };
+    });
+
+    window.addEventListener('hashchange', function () {
+      var storedHash = window.location.hash;
+      const grbCard = document.getElementById("typeGRB");
+      const pestCard = document.getElementById("typePEST");
+      switch (storedHash) {
+        case "#typeGRB":
+          console.log("grb");
+          grbCard.classList.add("highlight");
+          pestCard.classList.remove("highlight");
+          break;
+        case "#typePEST":
+          console.log("pest");
+          pestCard.classList.add("highlight");
+          grbCard.classList.remove("highlight");
+          break;
       }
     });
+
+    document.addEventListener('click', function () {
+      var cardTarget = document.querySelector(":target");
+      if (cardTarget != null) {
+        cardTarget.classList.remove("highlight");
+      }
+    }, false);
   </script>
 </body>
 
