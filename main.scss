@@ -2192,6 +2192,26 @@ section.normal-container {
     }
   }
 
+  .chip-wrapper {
+    display: flex;
+    label {
+      background-color: #eeeeee;
+      border-radius: 20px;
+      padding: 8px 12px;
+      cursor: pointer;
+      margin-right: 8px;
+      &:hover {
+        background: #fcf5c9;
+      }
+    }
+    input[type="radio"] {
+      display: none;
+      &:checked + label {
+        background-color: $theme-color;
+      }
+    }
+  }
+
   .course-bot {
     display: flex;
     flex-direction: column;
@@ -2432,6 +2452,9 @@ section.normal-container {
       border: 1px solid #cccccc;
       border-radius: 4px;
       width: 180px;
+      &.w-auto {
+        width: auto;
+      }
 
       @include mobile {
         width: calc(#{$mobile-width} - 64px);

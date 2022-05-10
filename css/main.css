@@ -2477,6 +2477,32 @@ section.normal-container .chip-box .chip:active {
   background: #dcc845;
 }
 
+section.normal-container .chip-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.normal-container .chip-wrapper label {
+  background-color: #eeeeee;
+  border-radius: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+section.normal-container .chip-wrapper label:hover {
+  background: #fcf5c9;
+}
+
+section.normal-container .chip-wrapper input[type="radio"] {
+  display: none;
+}
+
+section.normal-container .chip-wrapper input[type="radio"]:checked + label {
+  background-color: #f5df4d;
+}
+
 section.normal-container .course-bot {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2821,6 +2847,10 @@ section.normal-container .row select {
   background-position: top 4px right 4px;
   outline: none;
   margin-right: 5px;
+}
+
+section.normal-container .row select.w-auto {
+  width: auto;
 }
 
 @media only screen and (max-width: 40em) {
