@@ -2224,6 +2224,10 @@ section.normal-container hr {
   margin: 12px 0;
 }
 
+section.normal-container hr.m16 {
+  margin: 16px 0;
+}
+
 section.normal-container .filter-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2605,6 +2609,10 @@ section.normal-container .row .title {
   text-align: left;
   word-wrap: break-word;
   padding-right: 20px;
+}
+
+section.normal-container .row .title.t20 {
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 40em) {

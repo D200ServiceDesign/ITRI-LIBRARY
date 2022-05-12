@@ -1958,6 +1958,9 @@ section.normal-container {
     border-top: 1px solid #cccccc;
     border-bottom: 0;
     margin: 12px 0;
+    &.m16 {
+      margin: 16px 0;
+    }
   }
 
   .filter-row {
@@ -2285,6 +2288,9 @@ section.normal-container {
       text-align: left;
       word-wrap: break-word;
       padding-right: 20px;
+      &.t20 {
+        font-size: 20px;
+      }
     }
 
     @include mobile {
