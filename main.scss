@@ -2001,6 +2001,20 @@ section.normal-container {
     min-width: 360px;
   }
 
+  table th.grb-zh-name,
+  table td.grb-zh-name {
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
+  }
+
+  table th.grb-en-name,
+  table td.grb-en-name {
+    width: 780px;
+    max-width: 780px;
+    min-width: 780px;
+  }
+
   table th.attachment,
   table td.attachment {
     width: 124px;
