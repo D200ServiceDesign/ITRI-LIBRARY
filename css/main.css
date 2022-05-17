@@ -4163,6 +4163,14 @@ section.recommendation .rec-container #tab-6 .book .book-name {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.sidebar .topic.subtitle {
+  font-weight: 700;
+}
+.sidebar .topic.book-number {
+  color: #d6ba00;
+  margin-right: 3px;
+  margin-left: 3px;
+}
 .sidebar .topic.books::before {
   content: "- ";
   margin-left: 18px;
@@ -4189,6 +4197,11 @@ section.recommendation .rec-container #tab-6 .book .book-name {
 }
 .sidebar .topic .class-t {
   color: #af46eb;
+}
+.sidebar .book-subtitle {
+  display: flex;
+  margin-left: 18px;
+  margin-bottom: 4px;
 }
 .sidebar .no-data {
   width: 100%;

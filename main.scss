@@ -4574,6 +4574,14 @@ section.recommendation {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    &.subtitle{
+      font-weight: 700;
+    }
+    &.book-number{
+      color: #d6ba00;
+      margin-right: 3px;
+      margin-left: 3px;
+    }
     &.books::before {
       content: "- ";
       margin-left: 18px;
@@ -4604,6 +4612,11 @@ section.recommendation {
     .class-t {
       color: #af46eb;
     }
+  }
+  .book-subtitle{
+    display: flex;
+    margin-left: 18px;
+    margin-bottom: 4px;
   }
   .no-data {
     width: 100%;
