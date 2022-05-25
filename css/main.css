@@ -4215,7 +4215,7 @@ section.recommendation .rec-container #tab-6 .book .book-name {
 .sidebar .no-data ~ .text {
   text-align: center;
 }
-.sidebar.expanded ~ .tag .name::before {
+.sidebar.expanded ~ .sidebar-tag .name::before {
   transform: scaleX(-1);
 }
 .sidebar.expanded {
@@ -4223,7 +4223,7 @@ section.recommendation .rec-container #tab-6 .book .book-name {
   display: block;
 }
 
-.tag {
+.sidebar-tag {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -4240,7 +4240,7 @@ section.recommendation .rec-container #tab-6 .book .book-name {
   z-index: 999;
   transform: translate(0%, -50%);
 }
-.tag:before, .tag:after {
+.sidebar-tag:before, .sidebar-tag:after {
   position: absolute;
   content: "";
   background-image: url("data:image/svg+xml,%0A%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M16,0 L16,16 L0,16 C8.7313589,16 15.8292047,9.00609896 15.9969636,0.314870665 L16,0 Z' id='Combined-Shape' fill='%23F4DF4C'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
@@ -4249,12 +4249,12 @@ section.recommendation .rec-container #tab-6 .book .book-name {
   width: 16px;
   height: 16px;
 }
-.tag:after {
+.sidebar-tag:after {
   top: unset;
   bottom: -16px;
   transform: scaley(-1);
 }
-.tag span.new {
+.sidebar-tag span.new {
   position: absolute;
   width: 43px;
   height: 43px;
@@ -4264,7 +4264,7 @@ section.recommendation .rec-container #tab-6 .book .book-name {
   background-color: #ec7d33;
   clip-path: polygon(0 0, 0% 100%, 100% 0);
 }
-.tag span.new:before {
+.sidebar-tag span.new:before {
   content: "NEW";
   color: #ffffff;
   font-size: 12px;
@@ -4272,14 +4272,14 @@ section.recommendation .rec-container #tab-6 .book .book-name {
   transform: rotate(-45deg) translatex(-3px) translatey(2px);
   display: block;
 }
-.tag .name {
+.sidebar-tag .name {
   font-size: 18px;
   font-weight: 500;
   width: 18px;
   line-height: 28px;
   color: #444444;
 }
-.tag .name::before {
+.sidebar-tag .name::before {
   content: "";
   width: 18px;
   height: 28px;
@@ -4289,7 +4289,7 @@ section.recommendation .rec-container #tab-6 .book .book-name {
   background-repeat: no-repeat;
 }
 
-.sidebar.expanded ~ .tag {
+.sidebar.expanded ~ .sidebar-tag {
   right: 312px;
 }
 

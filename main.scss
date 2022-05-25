@@ -4631,7 +4631,7 @@ section.recommendation {
     }
   }
 
-  &.expanded ~ .tag .name::before {
+  &.expanded ~ .sidebar-tag .name::before {
     transform: scaleX(-1);
   }
   &.expanded {
@@ -4639,7 +4639,7 @@ section.recommendation {
     display: block;
   }
 }
-.tag {
+.sidebar-tag {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -4705,6 +4705,6 @@ section.recommendation {
     }
   }
 }
-.sidebar.expanded ~ .tag {
+.sidebar.expanded ~ .sidebar-tag {
   right: 312px;
 }
