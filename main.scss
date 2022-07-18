@@ -2257,8 +2257,17 @@ section.normal-container {
       min-height: 324px;
       position: relative;
 
+      @include mobile {
+        width: 100%;
+        min-height: 380px;
+      }
+
       &:nth-of-type(2n + 1) {
         margin-right: 16px;
+
+        @include mobile {
+          margin-right: unset;
+        }
       }
 
       .conf-row {
@@ -2345,11 +2354,15 @@ section.normal-container {
         div {
           flex: 1;
           text-align: center;
-          padding: 14px 0;
           border-right: 1px solid #ccc;
+
+          &:first-child {
+            border-bottom-left-radius: 8px;
+          }
 
           &:last-child {
             border-right: unset;
+            border-bottom-right-radius: 8px;
           }
 
           &:hover {
@@ -2363,13 +2376,26 @@ section.normal-container {
 
             a {
               cursor: pointer;
-            }
-
-            &::before {
+              line-height: 24px;
               display: inline-block;
-              content: url("../images/icn-conference-video.svg");
-              vertical-align: middle;
-              margin-right: 8px;
+              width: 100%;
+              padding: 14px 0;
+
+              @include mobile {
+                padding: 8px 0;
+              }
+
+              &::before {
+                display: inline-block;
+                content: url("../images/icn-conference-video.svg");
+                vertical-align: middle;
+                margin-right: 8px;
+
+                @include mobile {
+                  display: block;
+                  margin-right: 0;
+                }
+              }
             }
           }
 
@@ -2399,7 +2425,19 @@ section.normal-container {
                   content: "• ";
                   color: #007bd8;
                 }
+
+                a {
+                  width: unset;
+                  padding: unset;
+
+                  &::before {
+                    content: "";
+
+                  }
+                }
               }
+
+
             }
 
             &.active {
@@ -2412,14 +2450,18 @@ section.normal-container {
           }
 
           &.report {
-            &::before {
-              content: url("../images/icn-conference-report.svg");
+            a {
+              &::before {
+                content: url("../images/icn-conference-report.svg");
+              }
             }
           }
 
           &.standard {
-            &::before {
-              content: url("../images/icn-conference-standard.svg");
+            a {
+              &::before {
+                content: url("../images/icn-conference-standard.svg");
+              }
             }
           }
 

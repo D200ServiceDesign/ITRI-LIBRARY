@@ -2186,8 +2186,19 @@ section.normal-container .conf-container .conf-card {
   min-height: 324px;
   position: relative;
 }
+@media only screen and (max-width: 40em) {
+  section.normal-container .conf-container .conf-card {
+    width: 100%;
+    min-height: 380px;
+  }
+}
 section.normal-container .conf-container .conf-card:nth-of-type(2n + 1) {
   margin-right: 16px;
+}
+@media only screen and (max-width: 40em) {
+  section.normal-container .conf-container .conf-card:nth-of-type(2n + 1) {
+    margin-right: unset;
+  }
 }
 section.normal-container .conf-container .conf-card .conf-row {
   display: -webkit-box;
@@ -2276,11 +2287,14 @@ section.normal-container .conf-container .conf-card .btn-row div {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  padding: 14px 0;
   border-right: 1px solid #ccc;
+}
+section.normal-container .conf-container .conf-card .btn-row div:first-child {
+  border-bottom-left-radius: 8px;
 }
 section.normal-container .conf-container .conf-card .btn-row div:last-child {
   border-right: unset;
+  border-bottom-right-radius: 8px;
 }
 section.normal-container .conf-container .conf-card .btn-row div:hover {
   background-color: #eee;
@@ -2290,12 +2304,27 @@ section.normal-container .conf-container .conf-card .btn-row div.video, section.
 }
 section.normal-container .conf-container .conf-card .btn-row div.video a, section.normal-container .conf-container .conf-card .btn-row div.report a, section.normal-container .conf-container .conf-card .btn-row div.standard a {
   cursor: pointer;
+  line-height: 24px;
+  display: inline-block;
+  width: 100%;
+  padding: 14px 0;
 }
-section.normal-container .conf-container .conf-card .btn-row div.video::before, section.normal-container .conf-container .conf-card .btn-row div.report::before, section.normal-container .conf-container .conf-card .btn-row div.standard::before {
+@media only screen and (max-width: 40em) {
+  section.normal-container .conf-container .conf-card .btn-row div.video a, section.normal-container .conf-container .conf-card .btn-row div.report a, section.normal-container .conf-container .conf-card .btn-row div.standard a {
+    padding: 8px 0;
+  }
+}
+section.normal-container .conf-container .conf-card .btn-row div.video a::before, section.normal-container .conf-container .conf-card .btn-row div.report a::before, section.normal-container .conf-container .conf-card .btn-row div.standard a::before {
   display: inline-block;
   content: url("../images/icn-conference-video.svg");
   vertical-align: middle;
   margin-right: 8px;
+}
+@media only screen and (max-width: 40em) {
+  section.normal-container .conf-container .conf-card .btn-row div.video a::before, section.normal-container .conf-container .conf-card .btn-row div.report a::before, section.normal-container .conf-container .conf-card .btn-row div.standard a::before {
+    display: block;
+    margin-right: 0;
+  }
 }
 section.normal-container .conf-container .conf-card .btn-row div.video ul.video-list {
   position: absolute;
@@ -2324,16 +2353,23 @@ section.normal-container .conf-container .conf-card .btn-row div.video ul.video-
   content: "• ";
   color: #007bd8;
 }
+section.normal-container .conf-container .conf-card .btn-row div.video ul.video-list li a {
+  width: unset;
+  padding: unset;
+}
+section.normal-container .conf-container .conf-card .btn-row div.video ul.video-list li a::before {
+  content: "";
+}
 section.normal-container .conf-container .conf-card .btn-row div.video.active {
   background-color: #DEDEDE;
 }
 section.normal-container .conf-container .conf-card .btn-row div.video.active ul.video-list {
   display: block;
 }
-section.normal-container .conf-container .conf-card .btn-row div.report::before {
+section.normal-container .conf-container .conf-card .btn-row div.report a::before {
   content: url("../images/icn-conference-report.svg");
 }
-section.normal-container .conf-container .conf-card .btn-row div.standard::before {
+section.normal-container .conf-container .conf-card .btn-row div.standard a::before {
   content: url("../images/icn-conference-standard.svg");
 }
 section.normal-container .conf-container .conf-card .btn-row div a {
