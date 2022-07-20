@@ -2309,6 +2309,10 @@ section.normal-container {
           transform: translateY(-50%);
           display: none;
 
+          @include mobile {
+            width: 100%;
+          }
+
           &::after {
             content: "";
             position: absolute;
@@ -2432,7 +2436,10 @@ section.normal-container {
 
                   &::before {
                     content: "";
+                  }
 
+                  &:hover {
+                    opacity: 0.8;
                   }
                 }
               }

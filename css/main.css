@@ -2244,6 +2244,11 @@ section.normal-container .conf-container .conf-card .conf-row span.name-tag {
           transform: translateY(-50%);
   display: none;
 }
+@media only screen and (max-width: 40em) {
+  section.normal-container .conf-container .conf-card .conf-row span.name-tag {
+    width: 100%;
+  }
+}
 section.normal-container .conf-container .conf-card .conf-row span.name-tag::after {
   content: "";
   position: absolute;
@@ -2359,6 +2364,9 @@ section.normal-container .conf-container .conf-card .btn-row div.video ul.video-
 }
 section.normal-container .conf-container .conf-card .btn-row div.video ul.video-list li a::before {
   content: "";
+}
+section.normal-container .conf-container .conf-card .btn-row div.video ul.video-list li a:hover {
+  opacity: 0.8;
 }
 section.normal-container .conf-container .conf-card .btn-row div.video.active {
   background-color: #DEDEDE;
