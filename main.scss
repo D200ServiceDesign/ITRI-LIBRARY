@@ -2286,6 +2286,15 @@ section.normal-container {
           -webkit-box-orient: vertical;
           -webkit-line-clamp: 3;
           flex: 1;
+
+          a {
+            text-decoration: none;
+            color: $primary-color;
+
+            &:hover {
+              color: #007bd8;
+            }
+          }
         }
 
         img.thumbnail {
@@ -2345,6 +2354,7 @@ section.normal-container {
         font-size: 16px;
         padding: unset;
         margin-bottom: 48px;
+        word-wrap: break-word;
       }
 
       .btn-row {
