@@ -2286,14 +2286,15 @@ section.normal-container {
           -webkit-box-orient: vertical;
           -webkit-line-clamp: 3;
           flex: 1;
+        }
 
-          a {
-            text-decoration: none;
-            color: $primary-color;
+        a {
+          text-decoration: none;
+          color: $primary-color;
+          flex: 1;
 
-            &:hover {
-              color: #007bd8;
-            }
+          &:hover .conf-name {
+            color: #007bd8;
           }
         }
 
@@ -2305,7 +2306,7 @@ section.normal-container {
 
         span.name-tag {
           position: absolute;
-          top: -50%;
+          top: 0;
           left: 0;
           z-index: 2;
           padding: 8px 12px;
@@ -2315,7 +2316,7 @@ section.normal-container {
           line-height: 20px;
           border-radius: 8px;
           width: 360px;
-          transform: translateY(-50%);
+          transform: translateY(-100%);
           display: none;
 
           @include mobile {

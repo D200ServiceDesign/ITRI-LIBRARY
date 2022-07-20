@@ -2221,11 +2221,14 @@ section.normal-container .conf-container .conf-card .conf-row .conf-name {
       -ms-flex: 1;
           flex: 1;
 }
-section.normal-container .conf-container .conf-card .conf-row .conf-name a {
+section.normal-container .conf-container .conf-card .conf-row a {
   text-decoration: none;
   color: #444444;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
-section.normal-container .conf-container .conf-card .conf-row .conf-name a:hover {
+section.normal-container .conf-container .conf-card .conf-row a:hover .conf-name {
   color: #007bd8;
 }
 section.normal-container .conf-container .conf-card .conf-row img.thumbnail {
@@ -2236,7 +2239,7 @@ section.normal-container .conf-container .conf-card .conf-row img.thumbnail {
 }
 section.normal-container .conf-container .conf-card .conf-row span.name-tag {
   position: absolute;
-  top: -50%;
+  top: 0;
   left: 0;
   z-index: 2;
   padding: 8px 12px;
@@ -2247,8 +2250,8 @@ section.normal-container .conf-container .conf-card .conf-row span.name-tag {
   line-height: 20px;
   border-radius: 8px;
   width: 360px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
   display: none;
 }
 @media only screen and (max-width: 40em) {
