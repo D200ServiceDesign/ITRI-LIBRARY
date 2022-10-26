@@ -12,7 +12,7 @@ section.normal-container .sort-control-box ul li a:hover, section.normal-contain
 section.news .news-container .link-box .link-5, section.news .news-container .link-box .link-4, section.news .news-container .link-box .link-3, section.news .news-container .link-box .link-2, section.news .news-container .link-box .link-1 {
   background: url("../images/links.svg");
   background-repeat: no-repeat;
-  width: 140px;
+  /* width: 140px; */
   height: 34px;
 }
 
@@ -959,14 +959,27 @@ section.news .news-container .link-box {
       justify-content: space-around;
   padding: 48px 0;
 }
+section.news .news-container .link-box .link-left{
+  height: 300px;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 @media only screen and (max-width: 40em) {
-  section.news .news-container .link-box {
+  section.news .news-container .link-box .link-left {
     width: 88vw;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 40em) and (max-width: 64em) {
-  section.news .news-container .link-box {
+  section.news .news-container .link-box .link-left{
     width: calc(100vw - 32px);
     margin: 0 auto;
     -webkit-box-orient: horizontal;
@@ -981,33 +994,33 @@ section.news .news-container .link-box {
     padding: 24px 10vw 24px 20vw;
   }
 }
-section.news .news-container .link-box a {
+section.news .news-container .link-box .link-left a {
   font-size: 18px;
   color: #373a3c;
   line-height: 34px;
   margin-left: 50px;
 }
-section.news .news-container .link-box .link-1 {
+section.news .news-container .link-box .link-left .link-1 {
   background-position: top 0 left 0;
 }
-section.news .news-container .link-box .link-2 {
+section.news .news-container .link-box .link-left .link-2 {
   background-position: top 25% left 0;
 }
-section.news .news-container .link-box .link-3 {
+section.news .news-container .link-box .link-left .link-3 {
   background-position: top 50% left 0;
 }
-section.news .news-container .link-box .link-4 {
+section.news .news-container .link-box .link-left .link-4 {
   background-position: top 75% left 0;
 }
-section.news .news-container .link-box .link-5 {
+section.news .news-container .link-box .link-left .link-5 {
   background-position: top 100% left 0;
 }
 @media only screen and (min-width: 40em) and (max-width: 64em) {
-  section.news .news-container .link-box .link-1,
-section.news .news-container .link-box .link-2,
-section.news .news-container .link-box .link-3,
-section.news .news-container .link-box .link-4,
-section.news .news-container .link-box .link-5 {
+  section.news .news-container .link-box .link-left .link-1,
+section.news .news-container .link-box .link-left .link-2,
+section.news .news-container .link-box .link-left .link-3,
+section.news .news-container .link-box .link-left .link-4,
+section.news .news-container .link-box .link-left .link-5 {
     width: 50%;
   }
 }
