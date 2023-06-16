@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>國際研討會資訊 | 工研院圖書館 ITRI Library</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/basscss.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div id="sideMenu" class="side-menu">
+      <div class="menu-container">
+        <div class="menu-header">
+          <div class="collapse-btn" id="collapseBtn"></div>
+        </div>
+        <div class="details-container">
+          <details>
+            <summary>
+              <div class="title">
+                資源 Resource
+                <span class="arrow"></span>
+              </div>
+            </summary>
+            <div class="group">
+              <div class="headline">查詢</div>
+              <ul>
+                <li><a href="#">館藏查詢</a></li>
+                <li><a href="#">研發探索系統</a></li>
+                <li><a href="#">全院期刊查詢</a></li>
+              </ul>
+              <div class="headline">電子資源</div>
+              <ul>
+                <li><a href="#">電子資料庫與使用工具</a></li>
+                <li><a href="#">電子期刊查詢</a></li>
+                <li><a href="#">全院可用電子圖書</a></li>
+                <li><a href="#">HyRead雲端圖書館</a></li>
+              </ul>
+              <div class="headline">精選資訊</div>
+              <ul>
+                <li><a href="#">進館新書</a></li>
+                <li><a href="#">主題書展</a></li>
+                <li><a href="#">產業資訊精選</a></li>
+                <li><a href="#">GRB政府計劃資訊分析</a></li>
+                <li><a href="#">2030策略藍圖PEST專題</a></li>
+              </ul>
+            </div>
+          </details>
+          <details>
+            <summary>
+              <div class="title">
+                支援 Support
+                <span class="arrow"></span>
+              </div>
+            </summary>
+            <div class="group">
+              <div class="headline">資源推薦</div>
+              <ul>
+                <li><a href="#">推薦/票選書刊</a></li>
+                <li><a href="#">試用/推薦資料庫</a></li>
+                <li><a href="#">團購資料</a></li>
+              </ul>
+              <div class="headline">使用者服務</div>
+              <ul>
+                <li><a href="#">我是新手</a></li>
+                <li><a href="#" class="na">我是研發人員</a></li>
+              </ul>
+              <div class="headline">研發輔助工具</div>
+              <ul>
+                <li><a href="#">館員精選資源</a></li>
+                <li><a href="#">研發助理/OA</a></li>
+                <li><a href="#">自訂主題追蹤</a></li>
+                <li><a href="#">ITRI詞庫</a></li>
+              </ul>
+            </div>
+          </details>
+          <details>
+            <summary>
+              <div class="title">
+                服務 Service
+                <span class="arrow"></span>
+              </div>
+            </summary>
+            <div class="group">
+              <div class="headline">我想要…</div>
+              <ul>
+                <li><a href="#">申請標準全文/館際文獻影印/借書</a></li>
+                <li><a href="#">查詢個人借閱/續借</a></li>
+                <li><a href="#">查詢申請紀錄</a></li>
+                <li><a href="#">訂閱電子報</a></li>
+                <li><a href="#">問問題</a></li>
+              </ul>
+              <div class="headline">課程與活動</div>
+              <ul>
+                <li><a href="#">課程講座</a></li>
+                <li><a href="#">科技展覽資訊</a></li>
+                <li>
+                  <a href="#" class="na">工研人的閱讀筆記</a>
+                </li>
+              </ul>
+              <div class="headline">關於圖書館</div>
+              <ul>
+                <li><a href="#">訊息公告</a></li>
+                <li><a href="#">開放時間與介紹</a></li>
+                <li><a href="#">交換借書證與其他規則</a></li>
+                <li><a href="#">服務特色</a></li>
+              </ul>
+            </div>
+          </details>
+          <a href="#">
+            <div class="side-menu-link">研發探索系統</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="header-container">
+        <div id="menuBtn" class="menu lg-hide"></div>
+        <div class="logo"></div>
+        <div class="nav-bar xs-hide sm-hide md-hide">
+          <div class="row">
+            登入者：
+            <div class="user">張文怡</div>
+            <a href="https://itriweb.itri.org.tw/">ITRIWeb</a>
+            <form action="#">
+              <input type="text" placeholder="站內搜尋" name="search" />
+              <button type="submit" class="search-btn"></button>
+            </form>
+          </div>
+          <nav>
+            <div class="dropdown">
+              <span>資源 Resource</span>
+              <div class="content">
+                <div class="group">
+                  <div class="headline">查詢</div>
+                  <ul>
+                    <li><a href="#">館藏查詢</a></li>
+                    <li><a href="#">研發探索系統</a></li>
+                    <li><a href="#">全院期刊查詢</a></li>
+                  </ul>
+                </div>
+                <div class="group">
+                  <div class="headline">電子資源</div>
+                  <ul>
+                    <li><a href="#">電子資料庫與使用工具</a></li>
+                    <li><a href="#">電子期刊查詢</a></li>
+                    <li><a href="#">全院可用電子圖書</a></li>
+                    <li><a href="#">HyRead雲端圖書館</a></li>
+                  </ul>
+                </div>
+                <div class="group">
+                  <div class="headline">精選資訊</div>
+                  <ul>
+                    <li><a href="#">進館新書</a></li>
+                    <li><a href="#">主題書展</a></li>
+                    <li><a href="#">產業資訊精選</a></li>
+                    <li><a href="#">GRB政府計劃資訊分析</a></li>
+                    <li><a href="#">2030策略藍圖PEST專題</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <span>支援 Support</span>
+              <div class="content">
+                <div class="group">
+                  <div class="headline">資源推薦</div>
+                  <ul>
+                    <li><a href="#">推薦/票選書刊</a></li>
+                    <li><a href="#">試用/推薦資料庫</a></li>
+                    <li><a href="#">團購資料</a></li>
+                  </ul>
+                </div>
+                <div class="group">
+                  <div class="headline">使用者服務</div>
+                  <ul>
+                    <li><a href="#">我是新手</a></li>
+                    <li><a href="#" class="na">我是研發人員</a></li>
+                  </ul>
+                </div>
+                <div class="group">
+                  <div class="headline">研發輔助工具</div>
+                  <ul>
+                    <li><a href="#">館員精選資源</a></li>
+                    <li><a href="#">研發助理</a></li>
+                    <li><a href="#">自訂主題追蹤</a></li>
+                    <li><a href="#">ITRI詞庫</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <span>服務 Service</span>
+              <div class="content-2">
+                <div class="group">
+                  <div class="headline">我想要…</div>
+                  <ul>
+                    <li>
+                      <a href="#">申請標準全文/館際文獻<br />影印/借書</a>
+                    </li>
+                    <li><a href="#">查詢個人借閱/續借</a></li>
+                    <li><a href="#">查詢申請紀錄</a></li>
+                    <li><a href="#">訂閱電子報</a></li>
+                    <li><a href="#">問問題</a></li>
+                  </ul>
+                </div>
+                <div class="group">
+                  <div class="headline">課程與活動</div>
+                  <ul>
+                    <li><a href="#">課程講座</a></li>
+                    <li><a href="#">科技展覽資訊</a></li>
+                    <li>
+                      <a href="#" class="na">工研人的閱讀筆記</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="group">
+                  <div class="headline">關於圖書館</div>
+                  <ul>
+                    <li><a href="#">訊息公告</a></li>
+                    <li><a href="#">開放時間與介紹</a></li>
+                    <li><a href="#">交換借書證與其他規則</a></li>
+                    <li><a href="#">服務特色</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <a href="#">研發探索系統</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <ul class="breadcrumb">
+      <li><a href="#">首頁</a></li>
+      <li><a href="#">支援</a></li>
+      <li><a href="#">免費網路資源</a></li>
+      <li>影音資源</li>
+    </ul>
+
+    <section class="normal-container pb4">
+      <div class="title">免費網路資源</div>
+      <div class="tab-bar">
+        <div class="pane active">影音資源</div>
+        <div class="pane">產業政策</div>
+        <div class="pane">科技報導</div>
+        <div class="pane">國際機構</div>
+      </div>
+      <div class="post-box">
+        <span class="caption">資源說明</span>
+        <div class="text">收錄 Podcast 、youtube 影音相關資源。</div>
+      </div>
+      <div class="row my2">
+        <form action="#" class="database-search">
+          <input id="searchDatabase" type="text" placeholder="請輸入名稱/Search by name" name="search" />
+          <button type="submit" class="search-btn">查詢</button>
+        </form>
+      </div>
+      <div class="filter-row">
+        <span class="title">依字順查詢/Browse alphabetically：</span>
+        <a href="#" data-f="f01">A</a><a href="#" data-f="f02">B</a><a href="#" data-f="f03">C</a
+        ><a href="#" data-f="f04">D</a><a href="#" data-f="f05">E</a><a href="#" data-f="f06">F</a
+        ><a href="#" data-f="f07">G</a><a href="#" data-f="f08">H</a><a href="#" data-f="f09">I</a
+        ><a href="#" data-f="f10">J</a><a href="#" data-f="f11">M</a><a href="#" data-f="f12">N</a
+        ><a href="#" data-f="f13">O</a><a href="#" data-f="f14">P</a><a href="#" data-f="f15">S</a
+        ><a href="#" data-f="f16">U</a><a href="#" data-f="f17">W</a><a href="#" data-f="f18">Z</a
+        ><a href="#" data-f="f19">中</a><a href="#" data-f="f20">全</a><a href="#" data-f="f21">出</a
+        ><a href="#" data-f="f22">國</a><a href="#" data-f="f23">天</a><a href="#" data-f="f24">工</a
+        ><a href="#" data-f="f25">產</a><a href="#" data-f="f26">聯</a><a href="#" data-f="f27">華</a
+        ><a href="#" data-f="f28">萬</a><a href="#" data-f="f29">韓</a>
+      </div>
+      <div class="res-container">
+        <div class="res-card">
+          <div class="headline-row">
+            <div class="type">Podcast</div>
+            <div class="tags">
+              <div class="tag">智慧生活​</div>
+              <div class="tag">健康樂活</div>
+              <div class="tag">永續環境</div>
+            </div>
+          </div>
+          <div class="res-content">
+            <div class="thumbnail">
+              <img
+                src="https://www.ic975.com/wp-content/uploads/2022/02/%E9%9B%B6%E7%A2%B3%E6%9C%AA%E4%BE%86%E7%AF%80%E7%9B%AE%E5%B0%81%E9%9D%A2-800x800-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text">
+              <div class="res-title">零碳未來</div>
+              <div class="author">聯發科技教育基金會</div>
+              <div class="summary">
+                科技創新一波又一波，方興未艾，世界因為創新的力量，正在快速改變中。擁有解決關鍵問題的創意，獨具洞見的創新，或大膽實踐的創業；不但創造經濟價值，也為社會創造「共享到共榮的價值」。這就是新世代的力量。這就是新世代的力量。這就是新世代的力量。這就是新世代的力量。這就是新世代的力量。
+              </div>
+            </div>
+          </div>
+          <div class="res-row">
+            <div>近期節目</div>
+            <a href="#">More</a>
+          </div>
+          <div class="res-list">
+            <a class="res-item" href="#">
+              <div class="ep-title">EP46：有浪就有電？台灣海洋能的機會與挑戰​</div>
+              <div class="date">2021/10/10</div></a
+            >
+            <a class="res-item" href="#">
+              <div class="ep-title">EP46：有浪就有電？台灣海洋能的機會與挑戰機會與挑戰機會與挑戰​</div>
+              <div class="date">2021/10/10</div></a
+            >
+            <a class="res-item" href="#">
+              <div class="ep-title">EP46：有浪就有電？台灣海洋能的機會與挑戰​</div>
+              <div class="date">2021/10/10</div></a
+            >
+          </div>
+        </div>
+        <div class="res-card">
+          <div class="headline-row">
+            <div class="type">Podcast</div>
+            <div class="tags">
+              <div class="tag">智慧生活​</div>
+            </div>
+          </div>
+          <div class="res-content">
+            <div class="thumbnail">
+              <img
+                src="https://d3mww1g1pfq2pt.cloudfront.net/Avatar/cky8f4x781v5e0858z5hitxwv/1644811149283.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text">
+              <div class="res-title">科技如何</div>
+              <div class="author">TechOrange 科技橘報</div>
+              <div class="summary">每週分享最新的有趣科技生活應用</div>
+            </div>
+          </div>
+          <div class="res-row">
+            <div>近期節目</div>
+            <a href="#">More</a>
+          </div>
+          <div class="res-list">
+            <a class="res-item" href="#">
+              <div class="ep-title">EP46：有浪就有電？台灣海洋能的機會與挑戰​</div>
+              <div class="date">2021/10/10</div></a
+            >
+            <a class="res-item" href="#">
+              <div class="ep-title">EP46：有浪就有電？台灣海洋能的機會與挑戰機會與挑戰機會與挑戰​</div>
+              <div class="date">2021/10/10</div></a
+            >
+            <a class="res-item" href="#">
+              <div class="ep-title">EP46：有浪就有電？台灣海洋能的機會與挑戰​</div>
+              <div class="date">2021/10/10</div></a
+            >
+          </div>
+        </div>
+        <div class="res-card video">
+          <div class="headline-row">
+            <div class="type">Video</div>
+            <div class="tags">
+              <div class="tag">智慧生活​</div>
+              <div class="tag">健康樂活</div>
+              <div class="tag">永續環境</div>
+            </div>
+          </div>
+          <div class="res-content">
+            <div class="thumbnail">
+              <img src="https://site.ieee.org/societies/files/2012/04/ieee-logo2.jpg" alt="" />
+            </div>
+            <div class="text">
+              <div class="res-title">IEEE.org</div>
+              <div class="author">IEEE</div>
+              <div class="summary">
+                Welcome to IEEE's Youtube Channel IEEE is the world's largest professional association dedicated to
+                advancing technological innovation and excellence for the benefit of humanity. IEEE and its members
+                inspire a global community through its highly cited publications, conferences, technology standards, and
+                professional and educational activities. professional and educational activities. professional and
+                educational activities.
+              </div>
+            </div>
+          </div>
+          <a href="#" class="go">前往收看</a>
+        </div>
+        <div class="res-card video">
+          <div class="headline-row">
+            <div class="type">Video</div>
+            <div class="tags">
+              <div class="tag">智慧生活​</div>
+              <div class="tag">健康樂活</div>
+              <div class="tag">永續環境</div>
+            </div>
+          </div>
+          <div class="res-content">
+            <div class="thumbnail">
+              <img src="https://site.ieee.org/societies/files/2012/04/ieee-logo2.jpg" alt="" />
+            </div>
+            <div class="text">
+              <div class="res-title">ACM TechTalks</div>
+              <div class="author">ACM</div>
+              <div class="summary">
+                ACM members and non-members alike are welcome to attend our popular series of free TechTalks by expert
+                industry professionals, distinguished ACM award laureates, and visionary researchers from industry and
+                academia.
+              </div>
+            </div>
+          </div>
+          <a href="#" class="go">前往收看</a>
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="info">共 <span>100</span> 筆資料</div>
+        <div class="button-row">
+          <button class="first">首頁</button>
+          <button class="prev">上頁</button>
+          <button class="active">1</button>
+          <!-- <span class="ellipses lg-hide">⋯</span> -->
+          <button>2</button>
+          <button>3</button><button>4</button><button>5</button><button class="next">下頁</button
+          ><button class="last">末頁</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="inner">
+      <div class="info xs-hide">
+        版權所有© 2021 工業技術研究院 | 限院內同仁公務使用 禁止對外公開<br />
+        圖書館諮詢專線：18174；ersolib@itri.org.tw　|　網站設計製作：資訊處　|　<a href="#">FAQ</a>
+      </div>
+      <div class="info lg-hide sm-hide md-hide">
+        版權所有© 2021 工業技術研究院<br />
+        限院內同仁公務使用 禁止對外公開<br /><br />
+        圖書館諮詢專線：18174<br />
+        ersolib@itri.org.tw；<br />
+        網站設計製作：資訊處<br />
+        <a href="#">FAQ</a>
+      </div>
+    </footer>
+
+    <div id="toastS" class="toast">您的推薦單已成功送出。</div>
+    <div id="toastF" class="toast error">報名失敗，請檢查您的網路連線。</div>
+
+    <script>
+      function toastSuccess(el) {
+        const toast = document.getElementById("toastS");
+        toast.classList.add("show");
+        el.disabled = true;
+        setTimeout(function () {
+          toast.className = toast.className.replace("show", "");
+          el.disabled = false;
+        }, 3000);
+      }
+
+      function toastError() {
+        const toast = document.getElementById("toastF");
+        toast.classList.add("show");
+        setTimeout(function () {
+          toast.className = toast.className.replace("show", "");
+        }, 3000);
+      }
+    </script>
+
+    <script>
+      function toggleList(ele) {
+        ele.parentElement.classList.toggle("active");
+      }
+
+      window.onclick = function (event) {
+        if (!event.target.closest(".video")) {
+          let activeVideo = document.querySelectorAll(".video.active");
+          for (let i = 0; i < activeVideo.length; i++) {
+            activeVideo[i].classList.remove("active");
+          }
+        }
+      };
+    </script>
+
+    <script>
+      window.addEventListener("resize", function () {
+        "use strict";
+        window.location.reload();
+      });
+    </script>
+
+    <script>
+      const mq = window.matchMedia("(min-width: 40em)");
+      if (mq.matches) {
+        document.getElementById("searchDatabase").placeholder = "請輸入資料庫名稱/Search by database name";
+      } else {
+        document.getElementById("searchDatabase").placeholder = "請輸入資料庫名稱";
+      }
+    </script>
+
+    <script src="./js/sidemenu.js"></script>
+  </body>
+</html>
