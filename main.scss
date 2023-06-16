@@ -5186,10 +5186,23 @@ section.recommendation {
       .text {
         font-size: 16px;
         color: $primary-color;
-        .res-title {
-          font-weight: 500;
-          font-size: 24px;
-          margin-bottom: 4px;
+        a {
+          @extend %link-default;
+          .res-title {
+            color: $primary-color;
+            font-weight: 500;
+            font-size: 24px;
+            margin-bottom: 4px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: normal;
+            &:hover {
+              color: #007bd8;
+            }
+          }
         }
         .author {
           font-weight: 500;

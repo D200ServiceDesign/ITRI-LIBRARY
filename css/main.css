@@ -1,10 +1,10 @@
 @charset "UTF-8";
-.res-container .res-card .res-list a.res-item, .sidebar .topic a, section.recommendation .rec-container .type .type-card .swiper-container ul li a, section.feature .feature-container .feature-card .text a, section.hero .hero-container ul.breadcrumb li a, section.normal-container .sort-box ul li a,
+.res-container .res-card .res-list a.res-item, .res-container .res-card .res-content .text a, .sidebar .topic a, section.recommendation .rec-container .type .type-card .swiper-container ul li a, section.feature .feature-container .feature-card .text a, section.hero .hero-container ul.breadcrumb li a, section.normal-container .sort-box ul li a,
 section.normal-container .sort-control-box ul li a, section.normal-container article a, section.normal-container .text a, section.news-list-container .table-responsive table td a, ul.breadcrumb li a, section.news .news-container .link-box a, section.news .news-container table td a, .nav-bar .row a, section.recommendation .rec-container .type .type-card .more, section.feature .feature-container .more, section.normal-container .more, section.new .new-container .more, section.event .event-container .more, section.news .news-container .more, .table-responsive table td a {
   text-decoration: none;
   color: #444444;
 }
-.res-container .res-card .res-list a.res-item:hover, .sidebar .topic a:hover, section.recommendation .rec-container .type .type-card .swiper-container ul li a:hover, section.feature .feature-container .feature-card .text a:hover, section.hero .hero-container ul.breadcrumb li a:hover, section.normal-container .sort-box ul li a:hover,
+.res-container .res-card .res-list a.res-item:hover, .res-container .res-card .res-content .text a:hover, .sidebar .topic a:hover, section.recommendation .rec-container .type .type-card .swiper-container ul li a:hover, section.feature .feature-container .feature-card .text a:hover, section.hero .hero-container ul.breadcrumb li a:hover, section.normal-container .sort-box ul li a:hover,
 section.normal-container .sort-control-box ul li a:hover, section.normal-container article a:hover, section.normal-container .text a:hover, section.news-list-container .table-responsive table td a:hover, ul.breadcrumb li a:hover, section.news .news-container .link-box a:hover, section.news .news-container table td a:hover, .nav-bar .row a:hover, section.recommendation .rec-container .type .type-card .more:hover, section.feature .feature-container .more:hover, section.normal-container .more:hover, section.new .new-container .more:hover, section.event .event-container .more:hover, section.news .news-container .more:hover, .table-responsive table td a:hover {
   opacity: 0.8;
 }
@@ -5159,10 +5159,20 @@ section.recommendation .rec-container #tab-6 .book .book-name {
   font-size: 16px;
   color: #444444;
 }
-.res-container .res-card .res-content .text .res-title {
+.res-container .res-card .res-content .text a .res-title {
+  color: #444444;
   font-weight: 500;
   font-size: 24px;
   margin-bottom: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: normal;
+}
+.res-container .res-card .res-content .text a .res-title:hover {
+  color: #007bd8;
 }
 .res-container .res-card .res-content .text .author {
   font-weight: 500;
