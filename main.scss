@@ -3783,28 +3783,53 @@ section.normal-container {
         right: 0;
         top: 0;
         border-radius: 0 8px 0 100%;
+        background-repeat: no-repeat;
+        background-position: top 5px right 5px;
+        background-size: 20px 20px;
+      }
+      &.report::before {
+        background-image: url("../images/resource-icon-report.svg");
+      }
+      &.article::before {
+        background-image: url("../images/resource-icon-article.svg");
+      }
+      &.video::before {
+        background-image: url("../images/resource-icon-video.svg");
       }
       &.report::after,
       &.article::after,
       &.video::after {
         content: "";
-        width: 20px;
-        height: 20px;
         position: absolute;
-        right: 5px;
         top: 5px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 20px 20px;
+        right: 2px;
+        font-size: 14px;
+        color: #777;
+        font-weight: 500;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        transform: translateY(50%);
+        z-index: 2;
       }
       &.report::after {
-        background-image: url("../images/resource-icon-report.svg");
+        content: "報告";
       }
       &.article::after {
-        background-image: url("../images/resource-icon-article.svg");
+        content: "文章";
       }
       &.video::after {
-        background-image: url("../images/resource-icon-video.svg");
+        content: "影音";
+      }
+      &.report:hover::before,
+      &.article:hover::before,
+      &.video:hover::before {
+        background-image: unset;
+      }
+      &.report:hover::after,
+      &.article:hover::after,
+      &.video:hover::after {
+        opacity: 1;
+        transform: translateY(0);
       }
       &.video,
       &.article,

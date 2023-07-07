@@ -3774,26 +3774,50 @@ section.normal-container .resource-card-wrapper .resource-card.report::before, s
   right: 0;
   top: 0;
   border-radius: 0 8px 0 100%;
+  background-repeat: no-repeat;
+  background-position: top 5px right 5px;
+  background-size: 20px 20px;
+}
+section.normal-container .resource-card-wrapper .resource-card.report::before {
+  background-image: url("../images/resource-icon-report.svg");
+}
+section.normal-container .resource-card-wrapper .resource-card.article::before {
+  background-image: url("../images/resource-icon-article.svg");
+}
+section.normal-container .resource-card-wrapper .resource-card.video::before {
+  background-image: url("../images/resource-icon-video.svg");
 }
 section.normal-container .resource-card-wrapper .resource-card.report::after, section.normal-container .resource-card-wrapper .resource-card.article::after, section.normal-container .resource-card-wrapper .resource-card.video::after {
   content: "";
-  width: 20px;
-  height: 20px;
   position: absolute;
-  right: 5px;
   top: 5px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
+  right: 2px;
+  font-size: 14px;
+  color: #777;
+  font-weight: 500;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  z-index: 2;
 }
 section.normal-container .resource-card-wrapper .resource-card.report::after {
-  background-image: url("../images/resource-icon-report.svg");
+  content: "報告";
 }
 section.normal-container .resource-card-wrapper .resource-card.article::after {
-  background-image: url("../images/resource-icon-article.svg");
+  content: "文章";
 }
 section.normal-container .resource-card-wrapper .resource-card.video::after {
-  background-image: url("../images/resource-icon-video.svg");
+  content: "影音";
+}
+section.normal-container .resource-card-wrapper .resource-card.report:hover::before, section.normal-container .resource-card-wrapper .resource-card.article:hover::before, section.normal-container .resource-card-wrapper .resource-card.video:hover::before {
+  background-image: unset;
+}
+section.normal-container .resource-card-wrapper .resource-card.report:hover::after, section.normal-container .resource-card-wrapper .resource-card.article:hover::after, section.normal-container .resource-card-wrapper .resource-card.video:hover::after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 section.normal-container .resource-card-wrapper .resource-card.video .title, section.normal-container .resource-card-wrapper .resource-card.article .title, section.normal-container .resource-card-wrapper .resource-card.report .title {
   min-height: 44px;
