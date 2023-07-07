@@ -3674,6 +3674,211 @@ section.normal-container {
     padding: 4px 16px;
     display: none;
   }
+
+  .t20 {
+    font-size: 20px;
+  }
+
+  .bubble-container {
+    display: flex;
+    @include mobile {
+      flex-wrap: wrap;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    span.last-updated {
+      margin-left: 24px;
+      font-size: 14px;
+      color: #777777;
+      padding: 8px 0;
+      @include mobile {
+        width: 100%;
+        margin-left: unset;
+        text-align: right;
+      }
+      @include tablet {
+        width: 100%;
+        margin-left: unset;
+        text-align: right;
+      }
+    }
+    .chip-wrapper {
+      flex: 1;
+      flex-wrap: wrap;
+      label {
+        overflow-wrap: normal;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .resource-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .resource-card {
+      width: calc(100% / 3 - 40px / 3);
+      border: 1px solid #cccccc;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+      &:nth-of-type(3n + 2) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      @include mobile {
+        width: 100%;
+        &:nth-of-type(3n + 2) {
+          margin-left: unset;
+          margin-right: unset;
+        }
+      }
+      @include tablet {
+        width: calc(100% / 2 - 40px / 2);
+        &:nth-of-type(3n + 2) {
+          margin-left: unset;
+          margin-right: unset;
+        }
+        &:nth-of-type(odd) {
+          margin-right: 20px;
+        }
+        &:nth-of-type(even) {
+          margin-left: 20px;
+        }
+      }
+      .source,
+      .date {
+        font-weight: 500;
+        font-size: 14px;
+        color: #777;
+      }
+      .title {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 10px 0 6px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #007bd8;
+        a {
+          @extend %link-default;
+          color: #007bd8;
+        }
+      }
+      .date {
+        font-weight: normal;
+      }
+      &.report::before,
+      &.article::before,
+      &.video::before {
+        content: "";
+        width: 38px;
+        height: 38px;
+        background-color: rgba(245, 223, 77, 0.3);
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 0 8px 0 100%;
+      }
+      &.report::after,
+      &.article::after,
+      &.video::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px 20px;
+      }
+      &.report::after {
+        background-image: url("../images/resource-icon-report.svg");
+      }
+      &.article::after {
+        background-image: url("../images/resource-icon-article.svg");
+      }
+      &.video::after {
+        background-image: url("../images/resource-icon-video.svg");
+      }
+      &.video,
+      &.article,
+      &.report {
+        .title {
+          min-height: 44px;
+        }
+      }
+    }
+    &.expandable {
+      max-height: 138px;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+      @include mobile {
+        max-height: calc(138px * 3);
+      }
+      @include tablet {
+        max-height: calc(138px * 2);
+      }
+      &.expanded {
+        max-height: none;
+      }
+    }
+  }
+  .expand-row {
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #ccc;
+      left: 0;
+      top: 50%;
+    }
+    #expand-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0 20px;
+      font-size: 14px;
+      line-height: 20px;
+      color: #777777;
+      background-color: #fff;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &:before {
+        content: "更多免費資源";
+      }
+      &::after {
+        content: "";
+        width: 12px;
+        height: 20px;
+        display: inline-block;
+        margin-left: 4px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='12.1428765px' height='7.41px' viewBox='0 0 12.1428765 7.41' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='7/4新增頁面' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='itri圖書館/精選主題資源-（收合）-v2-' transform='translate(-763.8095, -1064)'%3E%3Crect fill='%23FFFFFF' x='0' y='0' width='1440' height='3025'%3E%3C/rect%3E%3Cg id='Group-14' transform='translate(217, 711)'%3E%3Cg id='Group-7' transform='translate(0, 347)'%3E%3Cg id='Group-4' transform='translate(456.1561, 0)'%3E%3Cg id='Group' transform='translate(86.6058, 0)'%3E%3Crect id='Base' x='0' y='0' width='20.2381275' height='20'%3E%3C/rect%3E%3Cpolygon id='Mask' fill='%23777777' points='5.47441349 6 10.1190637 10.58 14.763714 6 16.190502 7.41 10.1190637 13.41 4.0476255 7.41'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+      &.expanded {
+        &::before {
+          content: "收合免費資源";
+        }
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
 }
 
 .book-container {
