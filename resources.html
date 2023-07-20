@@ -326,7 +326,7 @@
           <div class="headline-row">
             <div class="type">Podcast</div>
             <div class="tags">
-              <div class="tag">智慧生活​</div>
+              <div class="tag">智慧生活​智慧生活​</div>
             </div>
           </div>
           <div class="res-content">
@@ -338,9 +338,13 @@
                 /></div
             ></a>
             <div class="text">
-              <a href="#" target="_blank"><div class="res-title">科技如何</div></a>
-              <div class="author">TechOrange 科技橘報</div>
-              <div class="summary">每週分享最新的有趣科技生活應用</div>
+              <a href="#" target="_blank"
+                ><div class="res-title">科技如何科技如何科技如何科技如何科技如何科技如何科技如何</div></a
+              >
+              <div class="author">TechOrange 科技橘報TechOrange 科技橘報TechOrange 科技橘報</div>
+              <div class="summary">
+                每週分享最新的有趣科技生活應用每週分享最新的有趣科技生活應用每週分享最新的有趣科技生活應用每週分享最新的有趣科技生活應用每週分享最新的有趣科技生活應用每週分享最新的有趣科技生活應用每週分享最新的有趣科技生活應用每週分享最新的有趣科技生活應用每週分享最新的有趣科技生活應用
+              </div>
             </div>
           </div>
           <div class="res-row">
@@ -405,12 +409,16 @@
                 <img src="https://site.ieee.org/societies/files/2012/04/ieee-logo2.jpg" alt="" /></div
             ></a>
             <div class="text">
-              <a href="#" target="_blank"><div class="res-title">ACM TechTalks</div></a>
+              <a href="#" target="_blank"
+                ><div class="res-title">ACM TechTalksACM TechTalksACM TechTalksACM TechTalksACM TechTalks</div></a
+              >
               <div class="author">ACM</div>
               <div class="summary">
                 ACM members and non-members alike are welcome to attend our popular series of free TechTalks by expert
                 industry professionals, distinguished ACM award laureates, and visionary researchers from industry and
-                academia.
+                academia.ACM members and non-members alike are welcome to attend our popular series of free TechTalks by
+                expert industry professionals, distinguished ACM award laureates, and visionary researchers from
+                industry and academia.
               </div>
             </div>
           </div>
@@ -488,6 +496,31 @@
       window.addEventListener("resize", function () {
         "use strict";
         window.location.reload();
+      });
+    </script>
+
+    <script>
+      //依照可用高度調整summary行數
+      window.addEventListener("DOMContentLoaded", function () {
+        let resCards = document.querySelectorAll(".res-card");
+        resCards.forEach(function (card) {
+          let hasVideo = card.classList.contains("video");
+          let summary = card.querySelector(".summary");
+          let titleHeight = card.querySelector(".res-title").offsetHeight;
+          let authorHeight = card.querySelector(".author").offsetHeight;
+          let lineHeight = parseInt(window.getComputedStyle(summary).lineHeight);
+          if (hasVideo === true) {
+            let resContentHeight = 318;
+            let maxHeight = resContentHeight - titleHeight - authorHeight;
+            let maxLines = Math.floor(maxHeight / lineHeight);
+            summary.style.webkitLineClamp = maxLines;
+          } else {
+            let resContentHeight = 214;
+            let maxHeight = resContentHeight - titleHeight - authorHeight;
+            let maxLines = Math.floor(maxHeight / lineHeight);
+            summary.style.webkitLineClamp = maxLines;
+          }
+        });
       });
     </script>
 
