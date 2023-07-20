@@ -5386,7 +5386,7 @@ section.recommendation {
           color: #777;
           text-align: center;
           height: 24px;
-          width: 76px;
+          padding: 0 8px;
           border-radius: 12px;
           background-color: #f2f2f2;
           margin-left: 6px;
@@ -5438,11 +5438,15 @@ section.recommendation {
           font-weight: 500;
           font-size: 15px;
           color: #979797;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-bottom: 7px;
         }
         .summary {
-          margin-top: 7px;
           display: -webkit-box;
-          -webkit-line-clamp: 6;
           -webkit-box-orient: vertical;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -5501,7 +5505,7 @@ section.recommendation {
     &.video {
       .text {
         .summary {
-          -webkit-line-clamp: 10;
+          -webkit-line-clamp: 9;
         }
       }
       a.go {
